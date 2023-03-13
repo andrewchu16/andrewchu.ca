@@ -1,0 +1,32 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+}
+
+@layer base {
+        /* width */
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply bg-zinc-600;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-zinc-800;
+        /* @apply rounded-sm; */
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-zinc-900;
+    }
+}
