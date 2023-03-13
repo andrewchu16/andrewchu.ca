@@ -1,12 +1,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-}
 
 @layer base {
         /* width */
@@ -22,7 +20,6 @@
     /* Handle */
     ::-webkit-scrollbar-thumb {
         @apply bg-zinc-800;
-        /* @apply rounded-sm; */
     }
     
     /* Handle on hover */

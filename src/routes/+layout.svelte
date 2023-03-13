@@ -3,8 +3,8 @@
     import '../app.css';
 </script>
 
-<div class="bg-zinc-900 overflow-x-hidden w-full selection:bg-zinc-800 selection:bg-opacity-70">
-    <div class="absolute w-screen z-10">
+<div class="bg-zinc-900 overflow-x-hidden w-full selection:bg-zinc-700 selection:bg-opacity-60">
+    <div class="absolute w-full z-10">
         <Navbar />
     </div>
     <slot />
