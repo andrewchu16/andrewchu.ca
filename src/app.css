@@ -7,7 +7,12 @@
 @tailwind utilities;
 
 @layer base {
-        /* width */
+    * {
+        scroll-behavior: smooth;
+        scroll-padding-top: 1em;
+    }
+
+    /* width */
     ::-webkit-scrollbar {
         width: 9px;
     }
