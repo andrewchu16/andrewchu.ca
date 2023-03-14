@@ -13,7 +13,7 @@
 
 <div class="bg-zinc-900 overflow-x-hidden w-full selection:bg-zinc-700 selection:bg-opacity-60">
     <Navbar />
-    <div class="relative h-80 w-full overflow-hidden whitespace-nowrap px-6 py-2">
+    <div class="relative h-80 w-full overflow-hidden whitespace-nowrap px-6 py-2" id="top">
         <h1
             class="absolute top-10 text-8xl tracking-wide font-extrabold font-sans text-zinc-600 select-none"
         >
