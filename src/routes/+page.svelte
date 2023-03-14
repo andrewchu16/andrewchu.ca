@@ -59,7 +59,7 @@
                     class="h-full"
                 >
                     <img src={FilmReview} alt="Film Review website" class="object-contain h-full rounded-lg overflow-clip border-4 border-zinc-900" />
-                    <p class="text-center mt-2 font-main text-lg link">Film Review</p>
+                    <p class="text-center mt-2 font-main text-lg link underline hover:no-underline">Film Review</p>
                 </a>
                 <a
                     target="_blank"
@@ -68,7 +68,7 @@
                     class="h-full"
                 >
                     <img src={SpringHacks} alt="Spring hacks website" class="object-contain h-full rounded-lg overflow-clip border-4 border-zinc-900" />
-                    <p class="text-center mt-2 font-main text-lg link">Spring Hacks</p>
+                    <p class="text-center mt-2 font-main text-lg link underline hover:no-underline">Spring Hacks</p>
                 </a>
             </div>
         </div>

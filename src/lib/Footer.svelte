@@ -2,14 +2,15 @@
     <a
         class="link text-zinc-500"
         href="https://github.com/andrewchu16"
-        target="_blank" rel="noreferrer" 
-        >github</a
+        target="_blank"
+        rel="noreferrer">github</a
     >
     <a
         class="link text-zinc-500"
         href="https://www.linkedin.com/in/andrew-chu-0b835025a/"
-        target="_blank" rel="noreferrer" 
-        >linkedin</a
+        target="_blank"
+        rel="noreferrer">linkedin</a
     >
     <p class="link text-zinc-500 cursor-pointer">andrew chu</p>
+    <a class="link text-zinc-500" href="#top">top</a>
 </footer>
