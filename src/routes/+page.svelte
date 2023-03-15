@@ -86,12 +86,6 @@
                 </a>
             </div>
         </div>
-        <div class="h-96 w-full p-6">
-            <h2 class="text-4xl text-zinc-300 font-main text-center" id="contact">Contact</h2>
-            <p class="text-xl text-zinc-400 font-main flex h-full justify-center items-center">
-                Find me at andrew.chu206@gmail.com
-            </p>
-        </div>
     </div>
     <Footer />
 </div>

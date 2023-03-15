@@ -31,5 +31,4 @@
     <a href="#designs" class="link">designs</a>
     <a href="#websites" class="link">websites</a>
     <a href="#projects" class="link">projects</a>
-    <a href="#contact" class="link">contact</a>
 </header>
