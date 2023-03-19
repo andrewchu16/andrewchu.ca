@@ -5,6 +5,7 @@
     import FilmReview from '$lib/assets/film review.jpg';
     import SpringHacks from '$lib/assets/springhacks.jpg';
     import Eyedentify from '$lib/assets/eyedentify.png';
+    import SocialIssueInfographic from '$lib/assets/Social Issue Infographic.jpg';
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
                 I'm a high school student.
             </p>
         </div>
-        <div class="w-full p-6 h-[800px]">
+        <div class="w-full p-6 h-[600px]">
             <h2 class="text-4xl text-zinc-300 font-main text-center" id="designs">Designs</h2>
             <div class="flex justify-around h-full w-full p-4">
                 <a
@@ -47,9 +48,21 @@
                         class="object-contain h-full rounded-lg overflow-clip"
                     />
                 </a>
+                <a
+                    target="_blank"
+                    href="https://www.canva.com/design/DAEhYKYT3WM/gwHSrhbWBHHx6mwijxQQpA/view?utm_content=DAEhYKYT3WM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                    rel="noreferrer"
+                    class="h-full"
+                >
+                    <img
+                        src={SocialIssueInfographic}
+                        alt="Social issue infographic for Grade 9 English"
+                        class="object-contain h-full rounded-lg overflow-clip"
+                    />
+                </a>
             </div>
         </div>
-        <div class="h-[650px] w-full p-6">
+        <div class="h-[600px] w-full p-6">
             <h2 class="text-4xl text-zinc-300 font-main text-center" id="websites">Websites</h2>
             <div class="flex justify-around h-full w-full p-4">
                 <a
