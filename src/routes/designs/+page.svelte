@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="bg-neutral-100 py-6 md:px-8 px-2">
-    <div class="fixed top-0 left-0 w-screen h-screen -z-10 transition-colors transparent"/>
+    <div class="fixed top-0 left-0 w-screen h-screen -z-10 transition-colors transparent" class:blurred />
     <!-- <h1 class="text-4xl text-main">designs</h1> -->
     <main class="grid grid-cols-1 gap-y-16" on:mouseleave={() => blurred = false}>
         <section>
