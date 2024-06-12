@@ -1,3 +1,11 @@
+<script lang='ts'>
+    import { goto } from "$app/navigation";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        goto('/english-creative-tool');
+    });
+</script>
 <svelte:head>
     <title>Andrew's Website</title>
 </svelte:head>
