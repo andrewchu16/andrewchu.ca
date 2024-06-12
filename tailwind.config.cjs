@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Helvetica'],
-        'display': ['Climate Crisis'],
+        'display': ['Jua'],
         'main': ['Sono']
       }
     },
