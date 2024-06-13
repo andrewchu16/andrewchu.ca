@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Segoe UI'],
+        'sans': ['Segoe UI', 'Calibri', 'Helvetica'],
         'display': ['Climate Crisis'],
         'main': ['Sono']
       }
