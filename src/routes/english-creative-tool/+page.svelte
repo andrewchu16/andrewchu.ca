@@ -30,10 +30,10 @@
     />
     <!-- Screen -->
     <div
-        class="w-full aspect-screen h-[90vh] border-neutral-900 border-[11px] rounded-[6vh] outline-neutral-400 outline-[4px] outline overflow-clip bg-white"
+        class="w-full aspect-screen h-[90vh] border-neutral-900 border-[11px] rounded-[6vh] outline-neutral-400 outline-[4px] outline overflow-clip bg-white relative flex flex-col"
     >
         <!-- Banner -->
-        <div class="w-full bg-neutral-100 h-[110px] flex flex-col gap-5">
+        <div class="w-full bg-neutral-100 h-[12vh] flex flex-col gap-5">
             <!-- Status Bar -->
             <div class="w-full  h-[24px] flex justify-between items-center px-8">
                 <div class="flex justify-center flex-grow">
@@ -53,14 +53,42 @@
                 <div class="absolute top-2 text-blue-600">
                     <MaterialSymbolsArrowBackIosRounded />
                 </div>
-                <div class="rounded-full bg-neutral-300 w-[13%] aspect-square m-auto"></div>
+                <div class="rounded-full bg-neutral-300 w-[13%] aspect-square m-auto" />
             </div>
         </div>
         <!-- Message Body -->
-        <div class="px-2 flex flex-col gap-1 pt-5">
+        <div class="px-2 flex flex-col gap-1 pt-5 overflow-y-scroll h-[calc(88vh-7rem)]">
             <div class="blue-message message">HELP ME</div>
             <div class="gray-message message">Hello</div>
             <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+        </div>
+        <!-- Controls -->
+        <div class="h-[7rem] w-full">
+            <div class="flex h-12 py-2 px-3 gap-2">
+                <div class="rounded-full bg-neutral-200 h-full aspect-square text-neutral-500 flex justify-center items-center select-none">+</div>
+                <div class="text-neutral-300 border-neutral-300 border-[1px] rounded-full px-2 py-1 box-border flex-grow select-none cursor-text">Message...</div>
+            </div>
+            <div class="h-16 w-full flex justify-around bg-neutral-300">
+                <button class="hover:font-bold active:font-normal">AA</button>
+                <button class="hover:font-bold active:font-normal">AA</button>
+            </div>
         </div>
     </div>
 </div>
@@ -85,5 +113,4 @@
     .gray-message {
         @apply self-start rounded-br-2xl rounded-bl-xl bg-neutral-200;
     }
-
 </style>
