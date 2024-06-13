@@ -124,7 +124,7 @@
             messages = [
                 ...messages,
                 {
-                    text: `🌟Thank you for playing. You chose pleasure ${(
+                    text: `At age 43, you pass away from a heart attack. Thank you for playing. You chose pleasure ${(
                         (numPleasure / QUESTIONS.length) * 100
                 ).toFixed(2)}% of the time.`,
                     type: 'gray'
