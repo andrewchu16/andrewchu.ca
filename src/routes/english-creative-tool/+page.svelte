@@ -1,8 +1,140 @@
 <script lang="ts">
     import MaterialSymbolsArrowBackIosRounded from 'virtual:icons/material-symbols/arrow-back-ios-rounded';
     import MaterialSymbolsBatteryHoriz050Rounded from 'virtual:icons/material-symbols/battery-horiz-050-rounded';
+    import Message from './message.svelte';
+    import { onMount, tick } from 'svelte';
 
     $: date = new Date();
+
+    $: questionIndex = 0;
+    let numPleasure = 0;
+    let container;
+
+    const QUESTIONS = [
+        {
+            question: 'At age 9, do you choose to play outside with friends or read a book?',
+            choices: ['Play outside', 'Read a book'],
+            pleasureChoice: 0
+        },
+        {
+            question: 'At age 12, do you decide to watch cartoons or help with a school project?',
+            choices: ['Watch cartoons', 'Help with school project'],
+            pleasureChoice: 0
+        },
+        {
+            question: 'At age 15, would you rather hang out at the mall or do homework?',
+            choices: ['Hang out at the mall', 'Do homework'],
+            pleasureChoice: 0
+        },
+        {
+            question: 'At age 18, do you choose to go to a party or study for your final exam?',
+            choices: ['Go to a party', 'Study for exam'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 20, would you rather spend your summer traveling or doing an internship?',
+            choices: ['Traveling', 'Internship'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 23, do you decide to buy a new car or save money for graduate school?',
+            choices: ['Buy a new car', 'Save for graduate school'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 25, would you prefer to spend your weekends socializing or working on a big project?',
+            choices: ['Socializing', 'Working on project'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 28, do you choose to invest in a fancy apartment or allocate funds for career development?',
+            choices: ['Fancy apartment', 'Career development'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 30, would you rather spend your evenings watching TV or working on a significant task?',
+            choices: ['Watching TV', 'Working on task'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 33, do you decide to take a break and relax or attend a professional conference?',
+            choices: ['Take a break', 'Attend conference'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 35, would you prefer to spend your bonus on a luxury vacation or fund a new project?',
+            choices: ['Luxury vacation', 'Fund project'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 38, do you choose to pursue a hobby or take additional courses to enhance your expertise?',
+            choices: ['Pursue a hobby', 'Enhance expertise'],
+            pleasureChoice: 0
+        },
+        {
+            question:
+                'At age 40, would you rather spend your free time relaxing or mentoring young professionals?',
+            choices: ['Relaxing', 'Mentoring young professionals'],
+            pleasureChoice: 0
+        }
+    ];
+
+    let messages = [];
+
+    const askQuestion = async () => {
+        messages = [
+            ...messages,
+            {
+                text: QUESTIONS[questionIndex].question,
+                type: 'gray'
+            }
+        ];
+        await tick();
+        container.scrollTop = container.scrollHeight;
+    };
+
+    const makeChoice = async (choiceNum: number) => {
+        if (
+            questionIndex < QUESTIONS.length &&
+            QUESTIONS[questionIndex].pleasureChoice === choiceNum
+        )
+            numPleasure++;
+        messages = [
+            ...messages,
+            {
+                text: QUESTIONS[questionIndex].choices[choiceNum],
+                type: 'blue'
+            }
+        ];
+        if (questionIndex < QUESTIONS.length - 1) {
+            questionIndex++;
+            setTimeout(askQuestion, 300 + Math.random() * 250);
+        } else {
+            messages = [
+                ...messages,
+                {
+                    text: `🌟Thank you for playing. You chose pleasure ${(
+                        (numPleasure / QUESTIONS.length) * 100
+                ).toFixed(2)}% of the time.`,
+                    type: 'gray'
+                }
+            ];
+            await tick();
+            container.scrollTop = container.scrollHeight;
+        }
+    };
+
+    onMount(() => {
+        askQuestion();
+    });
 </script>
 
 <svelte:head>
@@ -57,27 +189,13 @@
             </div>
         </div>
         <!-- Message Body -->
-        <div class="px-2 flex flex-col gap-1 pt-3 overflow-y-auto h-[calc(88vh-7rem)]">
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="blue-message message">HELP ME</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
-            <div class="gray-message message">Hello</div>
-            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+        <div
+            class="px-2 flex flex-col gap-1 pt-3 overflow-y-auto h-[calc(88vh-7rem)]"
+            bind:this={container}
+        >
+            {#each messages as message}
+                <Message text={message.text} type={message.type} />
+            {/each}
         </div>
         <!-- Controls -->
         <div class="h-[7rem] w-full">
@@ -94,8 +212,12 @@
                 </div>
             </div>
             <div class="h-16 w-full flex justify-around bg-neutral-300">
-                <button class="hover:font-bold active:font-normal">AA</button>
-                <button class="hover:font-bold active:font-normal">AA</button>
+                <button class="hover:font-bold active:font-normal" on:click={() => makeChoice(0)}
+                    >{QUESTIONS[questionIndex].choices[0]}</button
+                >
+                <button class="hover:font-bold active:font-normal" on:click={() => makeChoice(1)}
+                    >{QUESTIONS[questionIndex].choices[1]}</button
+                >
             </div>
         </div>
     </div>
