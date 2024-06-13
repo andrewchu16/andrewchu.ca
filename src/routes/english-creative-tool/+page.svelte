@@ -115,8 +115,11 @@
             }
         ];
         if (questionIndex < QUESTIONS.length - 1) {
-            questionIndex++;
-            setTimeout(askQuestion, 300 + Math.random() * 250);
+            setTimeout(() =>
+            {
+                questionIndex++;
+                askQuestion();
+            }, 300 + Math.random() * 250);
         } else {
             messages = [
                 ...messages,
