@@ -45,7 +45,7 @@
                 </div>
                 <!-- Notch  -->
                 <div class="bg-neutral-900 rounded-b-2xl w-[46%] h-full" />
-                <div class="flex justify-center flex-grow -scale-x-100 text-xl">
+                <div class="flex justify-center flex-grow -scale-x-100 text-xl text-neutral-800">
                     <MaterialSymbolsBatteryHoriz050Rounded />
                 </div>
             </div>
@@ -57,7 +57,11 @@
             </div>
         </div>
         <!-- Message Body -->
-        <!--  -->
+        <div class="px-2 flex flex-col gap-1 pt-5">
+            <div class="blue-message message">HELP ME</div>
+            <div class="gray-message message">Hello</div>
+            <div class="gray-message message">The quick brown fox jumped over the lazy dog</div>
+        </div>
     </div>
 </div>
 
@@ -68,4 +72,18 @@
     :global(body) {
         @apply bg-neutral-800 w-screen h-screen flex justify-center items-center;
     }
+
+    .message {
+        @apply rounded-t-2xl max-w-[77%];
+        padding: 4px clamp(0px, calc(14px - 1%), 12px);
+    }
+
+    .blue-message {
+        @apply self-end rounded-bl-2xl rounded-br-xl bg-blue-500 text-white;
+    }
+
+    .gray-message {
+        @apply self-start rounded-br-2xl rounded-bl-xl bg-neutral-200;
+    }
+
 </style>
