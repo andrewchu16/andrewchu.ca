@@ -10,8 +10,7 @@
     <title>design portfolio</title>
 </svelte:head>
 
-<div class="bg-neutral-100 py-6 md:px-8 px-2">
-    <div class="fixed top-0 left-0 w-screen h-screen -z-10 transition-colors transparent" class:blurred />
+<div class="bg-neutral-100 py-6 md:px-8 px-2 h-screen">
     <!-- <h1 class="text-4xl text-main">designs</h1> -->
     <main class="grid grid-cols-1 gap-y-16" on:mouseleave={() => blurred = false}>
         <section>
@@ -21,22 +20,8 @@
                     <img
                         src={post.imageURL}
                         alt={post.alt}
-                        class="aspect-square hover:scale-110 hover:z-10 transition-transform"
+                        class="aspect-square"
                         on:mouseenter={() => (blurred = true)}
-                    />
-                {/each}
-            </div>
-        </section>
-        <section>
-            <!-- <h2 class="text-2xl">Posters</h2> -->
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12 md:p-8 transition-colors transparent" on:mouseleave={() => blurred = false}>
-                {#each data.posters as poster}
-                    <img
-                        src={poster.imageURL}
-                        alt={poster.alt}
-                        class="hover:scale-110 hover:z-20 transition-transform"
-                        on:mouseenter={() => (blurred = true)}
-                        
                     />
                 {/each}
             </div>
@@ -48,9 +33,4 @@
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-    
-    .blurred {
-        background-color: rgba(10, 10, 10, 0.8);
-        z-index: 10;
-    }
 </style>
