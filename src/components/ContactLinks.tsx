@@ -4,8 +4,8 @@ const links: { name: string; url: string; target: string }[] = [
     url: "https://www.linkedin.com/in/andrew-chu-0b835025a",
     target: "_blank",
   },
-  { name: "Resume", url: "/Resume - Andrew Chu.pdf", target: "_blank" },
-  { name: "Email", url: "mailto:andrew.chu206@gmail.com", target: "_blank" },
+  { name: "Resume", url: "/Resume.pdf", target: "_blank" },
+  { name: "Email", url: "mailto:hello@andrewchu.ca", target: "_blank" },
   { name: "GitHub", url: "https://github.com/andrewchu16", target: "_blank" },
 ];
 
