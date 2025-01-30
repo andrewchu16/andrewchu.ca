@@ -7,7 +7,7 @@ const links: {
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
   { name: "Projects", url: "/projects" },
-  { name: "Designs", url: "/designs" },
+  // { name: "Designs", url: "/designs" },
 ];
 
 export default function NavLinks() {
@@ -17,7 +17,7 @@ export default function NavLinks() {
         <TransitionLink
           key={link.name}
           href={link.url}
-          sleepEnterMs={500}
+          sleepEnterMs={300}
           sleepExitMs={200}
           className="text-lg text-secondary hover:text-primary"
         >

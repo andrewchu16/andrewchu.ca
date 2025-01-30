@@ -26,7 +26,7 @@ export default function RootLayout({
         <ThemeProvider>
           <main id="content">{children}</main>
           <div
-            className="w-screen absolute top-4 left-0 flex justify-center"
+            className="w-screen fixed top-4 left-0 flex justify-center"
             id="navbar-container"
           >
             <Navbar />
