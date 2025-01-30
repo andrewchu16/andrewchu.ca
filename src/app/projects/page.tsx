@@ -1,3 +1,9 @@
 export default function Projects() {
-    return <div className="font-sans">Projects</div>;
+  return (
+    <>
+      <div className="w-screen h-screen">
+        Projects
+      </div>
+    </>
+  );
 }

@@ -1,3 +1,9 @@
 export default function Designs() {
-    return <div className="font-sans">Designs</div>;
+  return (
+    <>
+      <div className="w-screen h-screen">
+        Designs
+      </div>
+    </>
+  );
 }

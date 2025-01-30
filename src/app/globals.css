@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -21,4 +22,35 @@ html, body {
 body {
   color: var(--primary);
   background: var(--background);
+  @apply font-sans;
+}
+
+#content {
+  transition-property: opacity, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  filter: none;
+}
+
+.page-transition #content {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+#navbar-container,
+.home #navbar-container {
+  top: calc(100% - 1rem - 110px);
+}
+
+#navbar-container {
+  transition-property: bottom, top;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects #navbar-container,
+.about #navbar-container,
+.designs #navbar-container {
+  @apply top-4;
 }
