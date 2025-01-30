@@ -37,20 +37,3 @@ body {
   opacity: 0;
   filter: blur(8px);
 }
-
-#navbar-container,
-.home #navbar-container {
-  top: calc(100% - 1rem - 110px);
-}
-
-#navbar-container {
-  transition-property: bottom, top;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.projects #navbar-container,
-.about #navbar-container,
-.designs #navbar-container {
-  @apply top-4;
-}

@@ -9,7 +9,6 @@ interface TransitionProps extends LinkProps {
   href: string;
   sleepEnterMs?: number;
   sleepExitMs?: number;
-  transitionClass?: string;
   className: string | undefined;
 }
 
@@ -23,7 +22,6 @@ export default function TransitionLink({
   sleepEnterMs = 0,
   sleepExitMs = 0,
   className,
-  transitionClass = "",
   ...props
 }: TransitionProps) {
   const router = useRouter();
@@ -33,11 +31,6 @@ export default function TransitionLink({
   ) => {
     e.preventDefault();
 
-    document.body.classList.remove("home");
-    document.body.classList.remove("projects");
-    document.body.classList.remove("about");
-    document.body.classList.remove("designs");
-    document.body.classList.add(transitionClass);
     document.body.classList.add("page-transition");
 
     await sleep(sleepEnterMs);
