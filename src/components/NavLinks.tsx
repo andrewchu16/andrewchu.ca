@@ -4,12 +4,12 @@ const links: { name: string; url: string }[] = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
   { name: "Projects", url: "/projects" },
-  { name: "Designs", url: "/Designs" },
+  { name: "Designs", url: "/designs" },
 ];
 
 export default function NavLinks() {
   return (
-    <div className="flex gap-4">
+    <>
       {links.map((link) => (
         <Link
           key={link.name}
@@ -19,6 +19,6 @@ export default function NavLinks() {
           {link.name}
         </Link>
       ))}
-    </div>
+    </>
   );
 }

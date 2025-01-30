@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
 :root {
   --background: #ffffff;
   --primary: #222222;
   --secondary: #7c7c7c;
 }
 
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --background: #0a0a0a;
-    --primary: #ededed;
-    --secondary: #999999;
-  } */
+.dark {
+  --background: #242424;
+  --primary: #eaeaea;
+  --secondary: #999999;
 }
 
 body {
