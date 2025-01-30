@@ -1,4 +1,4 @@
-export default function Moon() {
+export default function DarkModeIcon() {
   return (
     <svg
       className="dark:block hidden"

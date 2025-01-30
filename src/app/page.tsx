@@ -1,6 +1,5 @@
 import ContactLinks from "@/components/ContactLinks";
-import DarkModeToggle from "@/components/DarkModeToggle";
-import NavLinks from "@/components/NavLinks";
+import Navbar from "@/components/nav-bar/Navbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,10 +15,7 @@ export default function Home() {
           <ContactLinks />
         </div>
         <div className="w-screen absolute bottom-4 left-0 flex justify-center">
-          <nav className="rounded-full shadow-lg border py-5 px-10 m-5 transition-colors flex gap-4 items-center justify-center">
-            <NavLinks />
-            <DarkModeToggle />
-          </nav>
+          <Navbar />
         </div>
       </div>
     </>

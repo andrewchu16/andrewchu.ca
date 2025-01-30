@@ -2,8 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import Moon from "./icons/Moon";
-import Sun from "./icons/Sun";
+import DarkModeIcon from "../../icons/DarkModeIcon";
+import LightModeIcon from "../../icons/LightModeIcon";
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -22,8 +22,8 @@ export default function DarkModeToggle() {
       className="w-5 h-5 fill-secondary hover:fill-primary"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <Moon />
-      <Sun />
+      <DarkModeIcon />
+      <LightModeIcon />
     </button>
   );
 }

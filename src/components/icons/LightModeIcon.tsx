@@ -1,4 +1,4 @@
-export default function Sun() {
+export default function LightModeIcon() {
   return (
     <svg
       className="dark:hidden block"
