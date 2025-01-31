@@ -10,12 +10,14 @@ body {
 :root {
   --background: #ffffff;
   --primary: #222222;
+  --body: #2c2c2c;
   --secondary: #7c7c7c;
 }
 
 .dark {
   --background: #242424;
   --primary: #eaeaea;
+  --body: #bbbbbb;
   --secondary: #999999;
 }
 

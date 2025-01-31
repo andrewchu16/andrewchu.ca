@@ -6,7 +6,7 @@ export default function About() {
       <div className="min-h-screen w-screen flex flex-col">
         <div className="flex flex-col justify-center items-center flex-grow">
           <h1 className="text-4xl font-bold mb-2">About</h1>
-          <div className="max-w-[34rem] flex flex-col gap-3 text-secondary">
+          <div className="max-w-[34rem] flex flex-col gap-3 text-body">
             <p>
               Hi! I'm a CS student at the University of Waterloo who loves
               learning and trying new things.
@@ -31,7 +31,7 @@ export default function About() {
             <p>
               Previously, I was a Data Engineer Intern at{" "}
               <WebLink href="https://www.alljoined.com/">Alljoined</WebLink>,
-              where I worked to improve timing accuracy and data correctness of
+              where I worked to improve timing accuracy and verify data correctness of
               brainwave data. I was also a Full-Stack Engineer at{" "}
               <WebLink href="https://digitalmarketingplus.com/">
                 Digitera
@@ -49,7 +49,7 @@ export default function About() {
               <WebLink href="https://yrhacks.ca">YRHacks 2024</WebLink>. I
               coordinated schedules, managed real-time event updates, and
               resolved logistical challenges, helping bridge the gap between
-              different stakeholders involved. I was also a judge for GeeseHacks
+              different stakeholders involved. I was also a mentor and judge for GeeseHacks
               and NRGHacks.
             </p>
           </div>

@@ -7,7 +7,7 @@ interface WebLinkProps {
 
 export default function WebLink({ href, children }: WebLinkProps) {
   return (
-    <a href={href} className="font-semibold text-primary hover:underline">
+    <a href={href} className="font-medium text-primary hover:underline">
       {children}
     </a>
   );
