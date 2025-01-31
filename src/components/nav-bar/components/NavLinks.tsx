@@ -18,7 +18,7 @@ export default function NavLinks() {
           key={link.name}
           href={link.url}
           sleepEnterMs={300}
-          sleepExitMs={200}
+          sleepExitMs={300}
           className="text-lg text-secondary hover:text-primary"
         >
           {link.name}

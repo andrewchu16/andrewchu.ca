@@ -1,7 +1,7 @@
 export default function Designs() {
   return (
     <>
-      <div className="w-screen h-screen">
+      <div className="h-screen">
         Designs
       </div>
     </>
