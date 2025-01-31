@@ -33,10 +33,11 @@ export default function TransitionLink({
 
     document.body.classList.add("page-transition");
 
+    router.prefetch(href);
     await sleep(sleepEnterMs);
-    
+
     router.push(href);
-    
+
     await sleep(sleepExitMs);
     document.body.classList.remove("page-transition");
   };
