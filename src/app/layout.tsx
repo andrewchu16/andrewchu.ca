@@ -25,12 +25,12 @@ export default function RootLayout({
       <body className={`${hankenGrotesk.variable} antialiased`}>
         <ThemeProvider>
           <main id="content">{children}</main>
-          <div
-            className="w-screen fixed top-4 left-0 flex justify-center"
+            <div
+            className="fixed top-9 left-1/2 transform -translate-x-1/2"
             id="navbar-container"
-          >
+            >
             <Navbar />
-          </div>
+            </div>
         </ThemeProvider>
       </body>
     </html>
