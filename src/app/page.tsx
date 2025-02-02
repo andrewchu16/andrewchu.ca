@@ -9,8 +9,8 @@ export default function Home() {
       </Head>
       <div className="h-screen w-screen flex flex-col">
         <div className="flex flex-col justify-center items-center flex-grow">
-          <h1 className="text-6xl font-bold mb-1">Andrew Chu</h1>
-          <h2 className="text-3xl text-secondary mb-2.5">CS @ UWaterloo</h2>
+          <h1 className="text-4xl sm:text-6xl font-bold mb-1">Andrew Chu</h1>
+          <h2 className="text-xl sm:text-3xl text-secondary mb-2.5">CS @ UWaterloo</h2>
           <ContactLinks />
         </div>
       </div>

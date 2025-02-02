@@ -2,7 +2,7 @@ import contactLinks from "@/data/contactLinks";
 
 export default function ContactLinks() {
   return (
-    <div className="flex space-x-4">
+    <div className="flex sm:flex-row flex-col gap-2 items-center">
       {contactLinks.map((link) => (
         <a
           key={link.name}

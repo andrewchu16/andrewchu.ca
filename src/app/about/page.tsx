@@ -3,8 +3,8 @@ import WebLink from "@/components/utils/WebLink";
 export default function About() {
   return (
     <>
-      <div className="min-h-screen w-screen flex flex-col">
-        <div className="flex flex-col justify-center items-center flex-grow">
+      <div className="pt-[126px] sm:pt-0 min-h-screen w-screen flex flex-col">
+        <div className="px-1 sm:px-0 flex flex-col justify-start sm:justify-center items-center flex-grow">
           <h1 className="text-4xl font-bold mb-2">About</h1>
           <div className="max-w-[34rem] flex flex-col gap-3 text-body">
             <p>
