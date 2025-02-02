@@ -1,7 +1,7 @@
-export default function DarkModeIcon() {
+export default function DarkModeIcon({ className }: { className?: string }) {
   return (
     <svg
-      className="dark:block hidden"
+      className={className}
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >

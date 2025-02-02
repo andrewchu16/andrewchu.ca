@@ -22,8 +22,8 @@ export default function DarkModeToggle() {
       className="w-5 h-5 fill-secondary hover:fill-primary"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <DarkModeIcon />
-      <LightModeIcon />
+      <DarkModeIcon className="dark:block hidden" />
+      <LightModeIcon className="dark:hidden block"/>
     </button>
   );
 }

@@ -1,7 +1,7 @@
-export default function LightModeIcon() {
+export default function LightModeIcon({ className }: { className?: string }) {
   return (
     <svg
-      className="dark:hidden block"
+      className={className}
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >
