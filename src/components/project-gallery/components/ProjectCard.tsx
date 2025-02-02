@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </a>
       </div>
       <div className="px-2 pt-1.5 pb-2.5">
-        <div className="flex justify-between items-center mb-0.5 dark:selection:bg-neutral-700">
+        <div className="flex justify-between items-center mb-0.5">
           <h1>
             <WebLink href={project.projectUrl}>{project.name}</WebLink>
           </h1>
@@ -25,8 +25,8 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.createdDate.getFullYear()}
           </h2> */}
         </div>
-        <p className="text-body text-sm mb-2 dark:selection:bg-neutral-700">{project.description}</p>
-        <div className="flex gap-1 flex-wrap">
+        <p className="text-body text-sm mb-2">{project.description}</p>
+        <div className="flex gap-1 flex-wrap dark:selection:bg-neutral-800">
           {project.tags.map((tag: Tag) => (
             <p
               key={tag.long}
