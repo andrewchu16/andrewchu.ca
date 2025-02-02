@@ -30,7 +30,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.tags.map((tag: Tag) => (
             <p
               key={tag.long}
-              className="text-xs rounded-full px-2 py-0.5 shadow-sm dark:bg-neutral-700 bg-neutral-100 text-secondary"
+              className="text-xs rounded-full px-2 py-0.5 shadow-sm dark:bg-neutral-700 bg-neutral-200 text-secondary"
             >
               {tag.short}
             </p>
