@@ -31,8 +31,8 @@ export default function About() {
             <p>
               Previously, I was a Data Engineer Intern at{" "}
               <WebLink href="https://www.alljoined.com/">Alljoined</WebLink>,
-              where I worked to improve timing accuracy and verify data correctness of
-              brainwave data. I was also a Full-Stack Engineer at{" "}
+              where I worked to improve timing accuracy and verify data
+              correctness of brainwave data. I was also a Full-Stack Engineer at{" "}
               <WebLink href="https://digitalmarketingplus.com/">
                 Digitera
               </WebLink>
@@ -48,10 +48,11 @@ export default function About() {
               an event logistics organizer for{" "}
               <WebLink href="https://yrhacks.ca">YRHacks 2024</WebLink>. I
               coordinated schedules, managed real-time event updates, and
-              resolved logistical challenges, helping bridge the gap between
-              different stakeholders involved. I was also a mentor and judge for GeeseHacks
-              and NRGHacks.
+              resolved logistical challenges, helping bridge the gap between all
+              stakeholders involved. I was also a mentor and judge for
+              GeeseHacks and NRGHacks.
             </p>
+            <p>I am currently exploring robotics and advanced raytracing.</p>
           </div>
         </div>
       </div>
