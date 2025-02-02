@@ -24,7 +24,7 @@ function ProjectFilterCategory({
         {tags.map((tag: Tag) => (
           <label
             key={tag.long}
-            className={`text-sm rounded-full px-2.5 py-1 hover:text-body cursor-pointer ${
+            className={`text-sm rounded-full px-2.5 py-1 hover:text-body cursor-pointer shadow-sm ${
               filters[tag.long]
                 ? "dark:bg-neutral-600 bg-neutral-200 text-body"
                 : "dark:bg-neutral-700 bg-neutral-100 text-secondary"

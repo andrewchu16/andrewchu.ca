@@ -22,6 +22,8 @@ export default function Projects() {
     ),
   });
 
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <>
       <div className="pt-[126px] flex items-center justify-center">
@@ -30,8 +32,11 @@ export default function Projects() {
             <ProjectFilter filters={filters} setFilters={setFilters} />
           </div>
           <div className="flex flex-col gap-4">
-            <ProjectSearch />
-            <ProjectGallery />
+            <ProjectSearch
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+            />
+            <ProjectGallery filters={filters} searchQuery={searchQuery} />
           </div>
         </div>
       </div>
