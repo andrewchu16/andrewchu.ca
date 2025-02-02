@@ -147,7 +147,7 @@ const projects: Project[] = [
   },
   {
     name: "Cows Vs. Ducks",
-    description: "A strategy game based on Plants vs. Zombies. where cows defend against ducks. Implemented a state machine and animation system.",
+    description: "A strategy-based game based on Plants vs. Zombies, where cows defend against ducks. Implemented a state machine and animation system.",
     projectUrl: "https://github.com/rhhscs/cows-vs-ducks",
     createdDate: new Date("2023-09-23"),
     image: cowsVsDucksImage,
