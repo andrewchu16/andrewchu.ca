@@ -18,7 +18,9 @@ export default function ProjectGallery({
       const matchesSearchQuery =
         searchQuery === "" ||
         project.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        project.tags.some((tag) => tag.long.toLowerCase().includes(searchQuery.toLowerCase()));
+        project.tags.some((tag) =>
+          tag.long.toLowerCase().includes(searchQuery.toLowerCase())
+        );
 
       const matchesFilters =
         project.tags.some((tag) => filters[tag.long]) ||
@@ -35,9 +37,13 @@ export default function ProjectGallery({
       {filteredProjects.map((project) => (
         <ProjectCard project={project} key={project.name} />
       ))}
-      <div className="w-screen lg:w-72 max-w-full h-60"></div>
-      <div className="w-screen lg:w-72 max-w-full h-60"></div>
-      <div className="w-screen lg:w-72 max-w-full h-60"></div>
+      {filteredProjects.length === 0 && (
+        <>
+          <div className="w-screen lg:w-72 max-w-full h-60"></div>
+          <div className="w-screen lg:w-72 max-w-full h-60"></div>
+          <div className="w-screen lg:w-72 max-w-full h-60"></div>
+        </>
+      )}
     </div>
   );
 }
