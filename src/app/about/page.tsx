@@ -8,13 +8,13 @@ export default function About() {
           <h1 className="text-4xl font-bold mb-2">About</h1>
           <div className="max-w-[34rem] flex flex-col gap-3 text-body">
             <p>
-              Hi! I'm a CS student at the University of Waterloo who loves
+              Hi! I&apos;m a CS student at the University of Waterloo who loves
               learning and trying new things.
             </p>
             <p>
-              I'm highly experienced in full-stack web development. My main tech
+              I&apos;m highly experienced in full-stack web development. My main tech
               stacks are React, Svelte, TailwindCSS, JS/TS, Firebase, Flask, and
-              Express.js. I've explored{" "}
+              Express.js. I&apos;ve explored{" "}
               <WebLink href="https://dorahacks.io/buidl/17834">
                 brainwave processing
               </WebLink>
@@ -44,7 +44,7 @@ export default function About() {
               <WebLink href="https://devpost.com/Previouslynamedjeff">
                 attend hackathons
               </WebLink>
-              . I've participated in 20+ hackathons and won awards at YRHacks, Hack49, DeltaHacks, and more. I was
+              . I&apos;ve participated in 20+ hackathons and won awards at YRHacks, Hack49, DeltaHacks, and more. I was
               an event logistics organizer for{" "}
               <WebLink href="https://yrhacks.ca">YRHacks 2024</WebLink>. I
               coordinated schedules, managed real-time event updates, and
