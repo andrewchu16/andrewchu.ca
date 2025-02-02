@@ -29,7 +29,7 @@ body {
 
 #content {
   transition-property: opacity, filter;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
   opacity: 1;
   filter: none;
