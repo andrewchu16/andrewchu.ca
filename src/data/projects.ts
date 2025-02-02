@@ -1,33 +1,105 @@
 import tinyraytracerImage from "@/assets/projects/tinyraytracer.jpg";
 import eyedentifyImage from "@/assets/projects/eyedentify.jpg";
 import harborisImage from "@/assets/projects/harboris.png";
+import personalWebsiteImage from "@/assets/projects/personal-website.png";
+import easymeetImage from "@/assets/projects/easymeet.png";
+import workoutPlannerImage from "@/assets/projects/workout-planner.png";
+import spyglassWebsiteImage from "@/assets/projects/spyglass-website.png";
+import baselineImage from "@/assets/projects/baseline.png";
+import jarvisImage from "@/assets/projects/jarvis.png";
+import workdImage from "@/assets/projects/workd.png";
+import lilacEditorImage from "@/assets/projects/lilac-editor.png";
+import raycasterJavaImage from "@/assets/projects/raycaster-java.png";
+import brainfImage from "@/assets/projects/brainf.png";
+import cowsVsDucksImage from "@/assets/projects/cows-vs-ducks.png";
+import friendBotImage from "@/assets/projects/friend-bot.png";
+import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
 
 const projects: Project[] = [
   {
-    name: "Eyedentify",
+    name: "EasyMeet",
     description:
-      "A web application that uses facial recognition to identify people.",
-    image: eyedentifyImage,
-    imageAlt: "Eyedentify logo",
-    projectUrl: "https://github.com/andrewchu16/eyedentify",
-    createdDate: new Date("2023-03-03"),
+      "A mobile-friendly scheduling app for planning events with friends. Implemented a CI/CD pipeline and unit tests.",
+    image: easymeetImage,
+    imageAlt: "EasyMeet create meeting page",
+    projectUrl: "https://github.com/andrewchu16/easymeet",
+    siteUrl: "https://easymeet.ca",
+    createdDate: new Date("2025-01-10"),
     tags: [
-      tag.hackathon["YRHacks 2023"],
-      tag.language.Python,
-      tag.framework.Flask,
-      tag.framework.MediaPipe,
-      tag.framework.TailwindCSS,
-      tag.framework.React,
-      tag.other["RESTful API"],
       tag.language.TypeScript,
+      tag.framework.React,
+      tag.framework.TailwindCSS,
+      tag.database.Firebase,
+      tag.other["CI/CD"],
+      tag.other.GitHub,
+      tag.framework.Mocha,
+      tag.other.Figma,
+    ],
+  },
+  {
+    name: "The Spyglass Website",
+    description:
+      "The official website for Richmond Hill High School's student magazine. Optimized for the mobile experience.",
+    image: spyglassWebsiteImage,
+    imageAlt: "The Spyglass website home page",
+    projectUrl: "https://github.com/rhhsspyglass/spyglass",
+    siteUrl: "https://rhhsspyglass.com",
+    createdDate: new Date("2024-07-25"),
+    tags: [
+      tag.framework.SvelteKit,
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.language.CSS,
+      tag.other.GitHub,
+      tag.language.HTML,
+    ],
+  },
+  {
+    name: "Baseline",
+    description:
+      "A neurotech application for detecting fatigue levels in real-time using EEG data. Won 2nd Place for neurotech at Hack49.",
+    image: baselineImage,
+    imageAlt: "Baseline logo",
+    projectUrl: "https://github.com/andrewchu16/baseline",
+    createdDate: new Date("2024-10-21"),
+    tags: [
+      tag.language.Python,
+      tag.framework.FastAPI,
+      tag.data.SciPy,
+      tag.data.NumPy,
+      tag.data.MNE,
+      tag.data.Matplotlib,
+      tag.data["Jupyter Notebook"],
+      tag.framework.TailwindCSS,
+      tag.other.Neurotech,
+      tag.hackathon.Hack49,
+    ],
+  },
+  {
+    name: "Workout Tracker",
+    description:
+      "A workout tracker web application that allows users to log their workouts and track their progress. Utilizes the MERN stack and MVC architecture.",
+    image: workoutPlannerImage,
+    imageAlt: "Workout tracker homepage",
+    projectUrl: "https://github.com/andrewchu16/mern-test-app",
+    createdDate: new Date("2024-12-20"),
+    tags: [
+      tag.database.MongoDB,
+      tag.framework["Express.js"],
+      tag.framework.React,
+      tag.framework["Node.js"],
+      tag.other["REST API"],
+      tag.language.JavaScript,
+      tag.language.CSS,
     ],
   },
   {
     name: "tinyraytracer",
-    description: "A tiny raytracer in C++ and Go.",
+    description:
+      "A minimalist raytracer in C++ and Go. Renders lighting effects using the Phong reflection model.",
     image: tinyraytracerImage,
     imageAlt: "Tinyraytracer rendered image of a sphere",
     projectUrl: "https://github.com/andrewchu16/tinyraytracer",
@@ -39,67 +111,169 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "Eyedentify",
+    description:
+      "A web application utilizing facial recognition to identify multiple people from a picture. Won 2nd Place and Best Web App at YRHacks 2023.",
+    image: eyedentifyImage,
+    imageAlt: "Eyedentify logo",
+    projectUrl: "https://github.com/andrewchu16/eyedentify",
+    createdDate: new Date("2023-03-03"),
+    tags: [
+      tag.language.Python,
+      tag.framework.Flask,
+      tag.framework.React,
+      tag.language.TypeScript,
+      tag.framework.TailwindCSS,
+      tag.framework.MediaPipe,
+      tag.hackathon["YRHacks 2023"],
+      tag.other["REST API"],
+    ],
+  },
+  {
+    name: "Personal Website",
+    description:
+      "My personal website built with Next.js and Tailwind CSS. Features a dark mode toggle and a responsive design.",
+    image: personalWebsiteImage,
+    imageAlt: "Personal website home page",
+    projectUrl: "https://github.com/andrewchu16/andrewchu.ca",
+    createdDate: new Date("2025-02-02"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.language.CSS,
+      tag.other.GitHub,
+    ],
+  },
+  {
+    name: "Cows Vs. Ducks",
+    description: "A strategy game based on Plants vs. Zombies. where cows defend against ducks. Implemented a state machine and animation system.",
+    projectUrl: "https://github.com/rhhscs/cows-vs-ducks",
+    createdDate: new Date("2023-09-23"),
+    image: cowsVsDucksImage,
+    imageAlt: "Cows Vs. Ducks gampelay",
+    tags: [
+      tag.language.Java,
+      tag.framework.JSwing,
+      tag.other["Game Development"],
+    ]
+  },
+  {
+    name: "Jarvis",
+    description:
+      "A voice-controlled assistant for performing CI/CD for engineers on call. Featuring custom-trained NER model using spaCy.",
+    image: jarvisImage,
+    imageAlt: "Jarvis merging a pull request",
+    projectUrl: "https://github.com/andrewchu16/Jarvis",
+    createdDate: new Date("2024-01-01"),
+    tags: [
+      tag.language.Python,
+      tag.framework.FastAPI,
+      tag.other["CI/CD"],
+      tag.framework.spaCy,
+      tag.other.GitHub,
+      tag.other["REST API"],
+      tag.framework.React,
+      tag.language.TypeScript,
+      tag.hackathon["Hack Western 11"],
+    ],
+  },
+  {
+    name: "Layoff Evaders",
+    description: "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit. Won 2nd Place at DeltaHacks XI.",
+    projectUrl: "https://github.com/martin226/layoffevaders",
+    createdDate: new Date("2025-01-12"),
+    image: layoffEvadersImage,
+    imageAlt: "Layoff Evaders gameplay and dashboard",
+    tags: [
+      tag.data.Streamlit,
+      tag.hackathon["DeltaHacks XI"],
+      tag.other["Game Development"],
+    ]
+  },
+  {
+    name: "raycaster-java",
+    description:
+      "A Wolfenstein-like raycaster built in Java for rendering pseudo-3D environments.",
+    image: raycasterJavaImage,
+    imageAlt: "Example of raycasting",
+    projectUrl: "https://github.com/andrewchu16/raycaster-java",
+    createdDate: new Date("2022-07-21"),
+    tags: [
+      tag.language.Java,
+      tag.framework.JSwing,
+      tag.other["Computer Graphics"],
+    ],
+  },
+  {
+    name: "Lilac Editor",
+    description:
+      "A simple UML diagram editor built with Java Swing. Utilizes event-driven and OOP programming.",
+    projectUrl: "https://github.com/andrewchu16/lilac-editor",
+    image: lilacEditorImage,
+    imageAlt: "Lilac Editor",
+    createdDate: new Date("2023-06-13"),
+    tags: [tag.language.Java, tag.framework.JSwing],
+  },
+  {
     name: "Harboris",
     description:
-      "A chrome extension for organizing group-buys for any e-commerce store and providing fraud detection.",
+      "A chrome extension for organizing group-buys for any e-commerce store. Also provides fraud detection.",
     image: harborisImage,
     imageAlt: "Harboris logo",
     projectUrl: "https://github.com/andrewchu16/Harboris",
     createdDate: new Date("2025-01-18"),
     tags: [
-      tag.hackathon["UofTHacks 12"],
-      tag.language.TypeScript,
-      tag.framework.React,
       tag.other["Chrome Extension"],
+      tag.framework.React,
+      tag.other["Open AI"],
+      tag.language.TypeScript,
+      tag.language.CSS,
       tag.other.Figma,
+      tag.hackathon["UofTHacks 12"],
     ],
   },
   {
-    name: "Harboris2",
-    description:
-      "A chrome extension for organizing group-buys for any e-commerce store and providing fraud detection.",
-    image: harborisImage,
-    imageAlt: "Harboris logo",
-    projectUrl: "https://github.com/andrewchu16/Harboris",
-    createdDate: new Date("2025-01-18"),
+    name: "friend-bot",
+    description: "A Discord chatbot that befriends lonely users online. Implements context window and response regeneration. Won Best Use of API at YRHacks 2022.",
+    projectUrl: "https://github.com/andrewchu16/friend-bot",
+    image: friendBotImage,
+    imageAlt: "A conversation with friend-bot",
+    createdDate: new Date("2022-04-09"),
     tags: [
-      tag.hackathon["UofTHacks 12"],
+      tag.language.Python,
+      tag.other["Discord Bot"],
+      tag.other["Cohere API"],
+      tag.hackathon["YRHacks 2022"],
+    ]
+  },
+  {
+    name: "Workd",
+    description:
+      "Simplifying the job search process by providing a tinder-like platform for job seekers and employers to connect.",
+    image: workdImage,
+    imageAlt: "Workd logo",
+    projectUrl: "https://github.com/andrewchu16/workd",
+    createdDate: new Date("2024-10-06"),
+    tags: [
+      tag.language.Python,
+      tag.framework.Flask,
+      tag.framework.SvelteKit,
       tag.language.TypeScript,
-      tag.framework.React,
-      tag.other["Chrome Extension"],
-      tag.other.Figma,
+      tag.framework.TailwindCSS,
+      tag.hackathon["Hack the Valley 9"],
     ],
   },
   {
-    name: "Harboris3",
-    description:
-      "A chrome extension for organizing group-buys for any e-commerce store and providing fraud detection.",
-    image: harborisImage,
-    imageAlt: "Harboris logo",
-    projectUrl: "https://github.com/andrewchu16/Harboris",
-    createdDate: new Date("2025-01-18"),
+    name: "brainf",
+    description: "A brainf**** interpreter and transpiler written in C.",
+    projectUrl: "https://github.com/andrewchu16/brainf",
+    image: brainfImage,
+    imageAlt: "brainf terminal utility",
+    createdDate: new Date("2021-09-15"),
     tags: [
-      tag.hackathon["UofTHacks 12"],
-      tag.language.TypeScript,
-      tag.framework.React,
-      tag.other["Chrome Extension"],
-      tag.other.Figma,
-    ],
-  },
-  {
-    name: "Harboris4",
-    description:
-      "A chrome extension for organizing group-buys for any e-commerce store and providing fraud detection.",
-    image: harborisImage,
-    imageAlt: "Harboris logo",
-    projectUrl: "https://github.com/andrewchu16/Harboris",
-    createdDate: new Date("2025-01-18"),
-    tags: [
-      tag.hackathon["UofTHacks 12"],
-      tag.language.TypeScript,
-      tag.framework.React,
-      tag.other["Chrome Extension"],
-      tag.other.Figma,
+      tag.language.C,
+      tag.other.Interpreter,
     ],
   },
 ];

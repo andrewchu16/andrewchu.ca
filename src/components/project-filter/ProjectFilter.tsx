@@ -24,7 +24,7 @@ function ProjectFilterCategory({
         {tags.map((tag: Tag) => (
           <label
             key={tag.long}
-            className={`text-sm rounded-full px-2.5 py-1 hover:text-body cursor-pointer shadow-sm ${
+            className={`text-sm rounded-full px-2.5 py-1 hover:text-body cursor-pointer shadow-sm select-none ${
               filters[tag.long]
                 ? "dark:bg-neutral-600 bg-neutral-200 text-body"
                 : "dark:bg-neutral-700 bg-neutral-100 text-secondary"
@@ -54,31 +54,16 @@ export default function ProjectFilter({
   setFilters,
 }: ProjectFilterProps) {
   return (
-    <div className="flex flex-col gap-3 max-w-60 min-w-52">
-      <ProjectFilterCategory
-        title="Languages"
-        tags={tagList.languages}
-        filters={filters}
-        setFilters={setFilters}
-      />
-      <ProjectFilterCategory
-        title="Frameworks"
-        tags={tagList.frameworks}
-        filters={filters}
-        setFilters={setFilters}
-      />
-      <ProjectFilterCategory
-        title="Other"
-        tags={tagList.other}
-        filters={filters}
-        setFilters={setFilters}
-      />
-      <ProjectFilterCategory
-        title="Hackathons"
-        tags={tagList.hackathons}
-        filters={filters}
-        setFilters={setFilters}
-      />
+    <div className="flex flex-col gap-2.5 max-w-60 min-w-52">
+      {(Object.keys(tagList) as Array<keyof typeof tagList>).map((category) => (
+        <ProjectFilterCategory
+          key={category}
+          title={category.charAt(0).toUpperCase() + category.slice(1)}
+          tags={tagList[category]}
+          filters={filters}
+          setFilters={setFilters}
+        />
+      ))}
     </div>
   );
 }

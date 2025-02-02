@@ -6,21 +6,17 @@ import { tagList } from "@/data/tags";
 import { useState } from "react";
 
 export default function Projects() {
-  const [filters, setFilters] = useState<Record<string, boolean>>({
-    ...tagList.hackathons.reduce(
-      (acc, tag) => ({ ...acc, [tag.long]: false }),
-      {}
-    ),
-    ...tagList.languages.reduce(
-      (acc, tag) => ({ ...acc, [tag.long]: false }),
-      {}
-    ),
-    ...tagList.other.reduce((acc, tag) => ({ ...acc, [tag.long]: false }), {}),
-    ...tagList.frameworks.reduce(
-      (acc, tag) => ({ ...acc, [tag.long]: false }),
-      {}
-    ),
-  });
+  const [filters, setFilters] = useState<Record<string, boolean>>(
+    (Object.keys(tagList) as (keyof typeof tagList)[]).reduce((acc, key) => {
+      return {
+        ...acc,
+        ...tagList[key].reduce(
+          (innerAcc, tag) => ({ ...innerAcc, [tag.long]: false }),
+          {}
+        ),
+      };
+    }, {})
+  );
 
   const [searchQuery, setSearchQuery] = useState("");
 
