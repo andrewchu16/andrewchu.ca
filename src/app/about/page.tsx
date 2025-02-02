@@ -44,7 +44,7 @@ export default function About() {
               <WebLink href="https://devpost.com/Previouslynamedjeff">
                 attend hackathons
               </WebLink>
-              . I've attended 20+ hackathons and won awards at YRHacks, Hack49, DeltaHacks, and more. I was
+              . I've participated in 20+ hackathons and won awards at YRHacks, Hack49, DeltaHacks, and more. I was
               an event logistics organizer for{" "}
               <WebLink href="https://yrhacks.ca">YRHacks 2024</WebLink>. I
               coordinated schedules, managed real-time event updates, and
