@@ -24,7 +24,7 @@ body {
 body {
   color: var(--primary);
   background: var(--background);
-  @apply font-sans;
+  @apply font-sans selection:bg-neutral-200 dark:selection:bg-neutral-800;
 }
 
 #content {
