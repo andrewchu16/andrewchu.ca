@@ -35,7 +35,9 @@ export default function ProjectGallery({
       {filteredProjects.map((project) => (
         <ProjectCard project={project} key={project.name} />
       ))}
-      <div className="lg:min-w-72 lg:max-w-72 w-full max-w-84"></div>
+      <div className="w-screen lg:w-72 max-w-full h-60"></div>
+      <div className="w-screen lg:w-72 max-w-full h-60"></div>
+      <div className="w-screen lg:w-72 max-w-full h-60"></div>
     </div>
   );
 }
