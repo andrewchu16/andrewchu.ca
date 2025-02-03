@@ -46,7 +46,7 @@ const projects: Project[] = [
     image: spyglassWebsiteImage,
     imageAlt: "The Spyglass website home page",
     projectUrl: "https://github.com/rhhsspyglass/spyglass",
-    siteUrl: "https://rhhsspyglass.com",
+    siteUrl: "https://rhhspyglass.com",
     createdDate: new Date("2024-07-25"),
     tags: [
       tag.framework.SvelteKit,
@@ -136,6 +136,7 @@ const projects: Project[] = [
     image: personalWebsiteImage,
     imageAlt: "Personal website home page",
     projectUrl: "https://github.com/andrewchu16/andrewchu.ca",
+    siteUrl: "https://andrewchu.ca",
     createdDate: new Date("2025-02-02"),
     tags: [
       tag.framework["Next.js"],

@@ -1,3 +1,4 @@
+import OpenInNewIcon from "@/components/icons/OpenInNewIcon";
 import WebLink from "@/components/utils/WebLink";
 import type Project from "@/models/project.model";
 import Tag from "@/models/tag.model";
@@ -17,13 +18,15 @@ export default function ProjectCard({ project }: { project: Project }) {
         </a>
       </div>
       <div className="px-2 pt-1.5 pb-2.5">
-        <div className="flex justify-between items-center mb-0.5">
+        <div className="flex items-center mb-0.5 gap-2.5">
           <h1>
             <WebLink href={project.projectUrl}>{project.name}</WebLink>
           </h1>
-          {/* <h2 className="text-secondary text-sm">
-            {project.createdDate.getFullYear()}
-          </h2> */}
+          {project.siteUrl && (
+            <WebLink href={project.siteUrl} className="text-sm text-secondary">
+              <OpenInNewIcon className="h-4 fill-secondary" />
+            </WebLink>
+          )}
         </div>
         <p className="text-body text-sm mb-2">{project.description}</p>
         <div className="flex gap-1 flex-wrap dark:selection:bg-neutral-800">
