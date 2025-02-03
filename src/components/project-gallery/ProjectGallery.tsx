@@ -38,7 +38,7 @@ export default function ProjectGallery({
       {filteredProjects.map((project) => (
         <ProjectCard project={project} key={project.name} />
       ))}
-      <div className="text-sm sm:text-base rounded-lg w-screen lg:w-72 max-w-full h-full min-h-40 flex items-center justify-center flex-col text-body border border-dashed border-neutral-400 dark:border-neutral-700">
+      <div className="text-sm sm:text-base rounded-lg w-screen lg:w-72 max-w-full h-full min-h-40 sm:min-h-60 flex items-center justify-center flex-col text-body border border-dashed border-neutral-400 dark:border-neutral-700">
         <p className="text-center max-w-52">
           View the rest of my projects on{" "}
           <WebLink href="https://github.com/andrewchu16">GitHub</WebLink> and{" "}
