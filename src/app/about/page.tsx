@@ -34,7 +34,7 @@ export default function About() {
               <WebLink href="https://github.com/andrewchu16/lilac-editor">
                 desktop applications
               </WebLink>
-              .
+              , and more.
             </p>
             <p>
               I&apos;m highly experienced in full-stack web development. My main
@@ -66,7 +66,9 @@ export default function About() {
               stakeholders involved. I was also a mentor and judge for
               GeeseHacks and NRGHacks.
             </p>
-            <p>I am currently interested robotics and advanced raytracing.</p>
+            <p>
+              I am currently interested in robotics and advanced raytracing.
+            </p>
           </div>
         </div>
       </div>

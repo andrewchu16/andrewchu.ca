@@ -183,7 +183,7 @@ const projects: Project[] = [
   {
     name: "Layoff Evaders",
     description:
-      "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit and Firebase Real-time Databse. Won 2nd Place at DeltaHacks XI.",
+      "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit and Firebase Realtime Database. Won 2nd Place at DeltaHacks XI.",
     projectUrl: "https://github.com/martin226/layoffevaders",
     createdDate: new Date("2025-01-12"),
     image: layoffEvadersImage,
@@ -212,7 +212,7 @@ const projects: Project[] = [
   {
     name: "Lilac Editor",
     description:
-      "A simple UML diagram editor built with Java Swing. Utilizes event-driven and OOP programming.",
+      "A simple UML diagram editor built with Java Swing. Utilizes event-driven programming and OOP principles.",
     projectUrl: "https://github.com/andrewchu16/lilac-editor",
     image: lilacEditorImage,
     imageAlt: "Lilac Editor",
@@ -222,7 +222,7 @@ const projects: Project[] = [
   {
     name: "Harboris",
     description:
-      "A chrome extension for organizing group-buys for any e-commerce store. Also provides fraud detection.",
+      "A chrome extension for organizing group-buys for any e-commerce store. Also analyzes legitimacy of websites to provide fraud detection.",
     image: harborisImage,
     imageAlt: "Harboris logo",
     projectUrl: "https://github.com/andrewchu16/Harboris",
