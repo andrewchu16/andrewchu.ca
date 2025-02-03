@@ -17,17 +17,12 @@ export default function About() {
         <meta property="thumbnail" content="/icon.svg" />
       </Head>
       <div className="pt-[126px] sm:pt-0 min-h-screen w-screen flex flex-col">
-        <div className="px-1 sm:px-0 flex flex-col justify-start sm:justify-center items-center flex-grow">
-          <h1 className="text-4xl font-bold mb-2">About</h1>
+        <div className="px-2.5 sm:px-0 flex flex-col justify-start sm:justify-center items-center flex-grow">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2">About</h1>
           <div className="max-w-[34rem] flex flex-col gap-3 text-body">
             <p>
               Hi! I&apos;m a CS student at the University of Waterloo who loves
-              learning and trying new things.
-            </p>
-            <p>
-              I&apos;m highly experienced in full-stack web development. My main
-              tech stacks are React, Svelte, TailwindCSS, JS/TS, Firebase,
-              Flask, and Express.js. I&apos;ve explored{" "}
+              learning and trying new things. I&apos;ve explored{" "}
               <WebLink href="https://dorahacks.io/buidl/17834">
                 brainwave processing
               </WebLink>
@@ -40,6 +35,11 @@ export default function About() {
                 desktop applications
               </WebLink>
               .
+            </p>
+            <p>
+              I&apos;m highly experienced in full-stack web development. My main
+              tech stacks are React, Svelte, TailwindCSS, JS/TS, Firebase,
+              Flask, and Express.js.
             </p>
             <p>
               Previously, I was a Data Engineer Intern at{" "}
@@ -66,7 +66,7 @@ export default function About() {
               stakeholders involved. I was also a mentor and judge for
               GeeseHacks and NRGHacks.
             </p>
-            <p>I am currently exploring robotics and advanced raytracing.</p>
+            <p>I am currently interested robotics and advanced raytracing.</p>
           </div>
         </div>
       </div>

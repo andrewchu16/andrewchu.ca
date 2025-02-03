@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded-lg flex flex-col lg:max-w-72 w-full max-w-84 dark:border-0 dark:shadow-sm dark:shadow-neutral-700 border dark:border-secondary gap-2">
       <div className="relative w-full h-32 rounded-t-md overflow-hidden">
-        <a href={project.projectUrl} target="_blank">
+        <a href={project.projectUrl} target="_blank" className="relative block w-full h-full">
           <Image
             src={project.image}
             alt={project.imageAlt}
