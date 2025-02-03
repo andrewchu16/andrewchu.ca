@@ -1,7 +1,7 @@
 const contactLinks: { name: string; url: string; target: string }[] = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/andrew-chu-0b835025a",
+    url: "https://www.linkedin.com/in/andrewchu16",
     target: "_blank",
   },
   { name: "Resume", url: "/Resume.pdf", target: "_blank" },
