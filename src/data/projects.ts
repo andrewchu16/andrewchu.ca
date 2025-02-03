@@ -124,9 +124,9 @@ const projects: Project[] = [
       tag.framework.React,
       tag.language.TypeScript,
       tag.framework.TailwindCSS,
-      tag.framework.MediaPipe,
-      tag.hackathon["YRHacks 2023"],
+      tag.other.face_recognition,
       tag.other["REST API"],
+      tag.hackathon["YRHacks 2023"],
     ],
   },
   {
@@ -148,7 +148,8 @@ const projects: Project[] = [
   },
   {
     name: "Cows Vs. Ducks",
-    description: "A strategy-based game based on Plants vs. Zombies, where cows defend against ducks. Implemented a state machine and animation system.",
+    description:
+      "A strategy-based game based on Plants vs. Zombies, where cows defend against ducks. Implemented a state machine and animation system.",
     projectUrl: "https://github.com/rhhscs/cows-vs-ducks",
     createdDate: new Date("2023-09-23"),
     image: cowsVsDucksImage,
@@ -157,7 +158,7 @@ const projects: Project[] = [
       tag.language.Java,
       tag.framework.JSwing,
       tag.other["Game Development"],
-    ]
+    ],
   },
   {
     name: "Jarvis",
@@ -181,16 +182,18 @@ const projects: Project[] = [
   },
   {
     name: "Layoff Evaders",
-    description: "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit. Won 2nd Place at DeltaHacks XI.",
+    description:
+      "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit and Firebase Real-time Databse. Won 2nd Place at DeltaHacks XI.",
     projectUrl: "https://github.com/martin226/layoffevaders",
     createdDate: new Date("2025-01-12"),
     image: layoffEvadersImage,
     imageAlt: "Layoff Evaders gameplay and dashboard",
     tags: [
       tag.data.Streamlit,
+      tag.database.Firebase,
       tag.hackathon["DeltaHacks XI"],
       tag.other["Game Development"],
-    ]
+    ],
   },
   {
     name: "raycaster-java",
@@ -236,7 +239,8 @@ const projects: Project[] = [
   },
   {
     name: "friend-bot",
-    description: "A Discord chatbot that befriends lonely users online. Implements context window and response regeneration. Won Best Use of API at YRHacks 2022.",
+    description:
+      "A Discord chatbot that befriends lonely users online. Implements context window and response regeneration. Won Best Use of API at YRHacks 2022.",
     projectUrl: "https://github.com/andrewchu16/friend-bot",
     image: friendBotImage,
     imageAlt: "A conversation with friend-bot",
@@ -246,7 +250,7 @@ const projects: Project[] = [
       tag.other["Discord Bot"],
       tag.other["Cohere API"],
       tag.hackathon["YRHacks 2022"],
-    ]
+    ],
   },
   {
     name: "Workd",
@@ -272,10 +276,7 @@ const projects: Project[] = [
     image: brainfImage,
     imageAlt: "brainf terminal utility",
     createdDate: new Date("2021-09-15"),
-    tags: [
-      tag.language.C,
-      tag.other.Interpreter,
-    ],
+    tags: [tag.language.C, tag.other.Interpreter],
   },
 ];
 

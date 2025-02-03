@@ -55,13 +55,13 @@ const frameworksList: Tag[] = [
   { short: "FastAPI", long: "FastAPI" },
   { short: "SvelteKit", long: "SvelteKit" },
   { short: "Next.js", long: "Next.js" },
-  { short: "MediaPipe", long: "MediaPipe" },
   { short: "Express", long: "Express.js" },
   { short: "Node", long: "Node.js" },
   { short: "spaCy", long: "spaCy" },
 ];
 
 const otherList: Tag[] = [
+  { short: "Face Recognition", long: "face_recognition" },
   { short: "Graphics", long: "Computer Graphics" },
   { short: "EEG", long: "Neurotech" },
   { short: "REST", long: "REST API" },
