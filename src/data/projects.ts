@@ -167,7 +167,7 @@ const projects: Project[] = [
     image: jarvisImage,
     imageAlt: "Jarvis merging a pull request",
     projectUrl: "https://github.com/andrewchu16/Jarvis",
-    createdDate: new Date("2024-01-01"),
+    createdDate: new Date("2024-12-01"),
     tags: [
       tag.language.Python,
       tag.framework.FastAPI,
