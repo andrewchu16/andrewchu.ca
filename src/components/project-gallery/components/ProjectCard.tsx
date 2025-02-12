@@ -18,13 +18,14 @@ export default function ProjectCard({ project }: { project: Project }) {
         </a>
       </div>
       <div className="px-2 pt-1.5 pb-2.5">
-        <div className="flex items-center mb-0.5 gap-2.5">
+        <div className="flex items-center mb-0.5 gap-1.5">
           <h1>
             <WebLink href={project.projectUrl}>{project.name}</WebLink>
           </h1>
           {project.siteUrl && (
-            <WebLink href={project.siteUrl} className="text-sm text-secondary">
-              <OpenInNewIcon className="h-4 fill-secondary" />
+            <WebLink href={project.siteUrl} className="text-sm text-secondary flex gap-1 items-center hover:text-body hover:fill-body fill-secondary hover:decoration-transparent">
+              visit site
+              <OpenInNewIcon className="h-4" />
             </WebLink>
           )}
         </div>

@@ -27,7 +27,7 @@ function ProjectFilterCategory({
             className={`text-sm rounded-full px-2.5 py-1 cursor-pointer shadow-sm select-none ${
               filters[tag.long]
                 ? "dark:bg-neutral-400 bg-neutral-400 text-background shadow-md"
-                : "dark:bg-neutral-700 bg-neutral-200 text-secondary hover:text-body"
+                : "dark:bg-neutral-700 bg-neutral-200 text-neutral-500 hover:text-body"
             }`}
           >
             <input
