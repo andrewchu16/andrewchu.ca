@@ -74,6 +74,7 @@ const otherList: Tag[] = [
   { short: "Open AI", long: "Open AI" },
   { short: "Game", long: "Game Development" },
   { short: "Interpreter", long: "Interpreter" },
+  { short: "JWT", long: "JWT" },
 ];
 
 function buildTagMap(tags: Tag[]): { [key: string]: Tag } {

@@ -14,6 +14,7 @@ import brainfImage from "@/assets/projects/brainf.png";
 import cowsVsDucksImage from "@/assets/projects/cows-vs-ducks.png";
 import friendBotImage from "@/assets/projects/friend-bot.png";
 import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
+import invitationImage from "@/assets/projects/invitation.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -92,6 +93,7 @@ const projects: Project[] = [
       tag.framework.React,
       tag.framework["Node.js"],
       tag.other["REST API"],
+      tag.other.JWT,
       tag.language.JavaScript,
       tag.language.CSS,
     ],
@@ -236,6 +238,24 @@ const projects: Project[] = [
       tag.other.Figma,
       tag.hackathon["UofTHacks 12"],
     ],
+  },
+  {
+    name: "invitation",
+    description:
+      "An invitation to my birthday party. Features JWT authentication, server actions, and a responsive design. Friends only.",
+    projectUrl: "",
+    createdDate: new Date("2025-02-14"),
+    tags: [
+      tag.language.TypeScript,
+      tag.framework.React,
+      tag.framework["Next.js"],
+      tag.other.JWT,
+      tag.framework.TailwindCSS,
+      tag.other["REST API"],
+      tag.other.GitHub,
+    ],
+    image: invitationImage,
+    imageAlt: "Invitation page",
   },
   {
     name: "friend-bot",
