@@ -15,6 +15,7 @@ import cowsVsDucksImage from "@/assets/projects/cows-vs-ducks.png";
 import friendBotImage from "@/assets/projects/friend-bot.png";
 import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
 import invitationImage from "@/assets/projects/invitation.png";
+import camelaiCloneImage from "@/assets/projects/camelai-clone.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -212,6 +213,22 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "camelAI Landing Page Clone",
+    description: "A clone of the camelAI landing page. Supports mobile and webkit browsers. Implemented using Next.js and deployed on Vercel.",
+    image: camelaiCloneImage,
+    imageAlt: "camelAI landing page clone",
+    projectUrl: "https://github.com/andrewchu16/camelAI-landing-page",
+    createdDate: new Date("2025-03-01"),
+    siteUrl: "https://camel-ai-landing-page.vercel.app",
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.other.GitHub,
+      tag.other.Vercel,
+    ]
+  },
+  {
     name: "Lilac Editor",
     description:
       "A simple UML diagram editor built with Java Swing. Utilizes event-driven programming and OOP principles.",
@@ -220,6 +237,26 @@ const projects: Project[] = [
     imageAlt: "Lilac Editor",
     createdDate: new Date("2023-06-13"),
     tags: [tag.language.Java, tag.framework.JSwing],
+  },
+  {
+    name: "invitation",
+    description:
+      "An invitation to my birthday party. Features JWT authentication, server actions, and a responsive design. Friends only.",
+    projectUrl: "",
+    createdDate: new Date("2025-02-14"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.language.TypeScript,
+      tag.database.Supabase,
+      tag.other.JWT,
+      tag.other["REST API"],
+      tag.framework.React,
+      tag.framework.TailwindCSS,
+      tag.other.GitHub,
+      tag.other.Vercel,
+    ],
+    image: invitationImage,
+    imageAlt: "Invitation page",
   },
   {
     name: "Harboris",
@@ -238,24 +275,6 @@ const projects: Project[] = [
       tag.other.Figma,
       tag.hackathon["UofTHacks 12"],
     ],
-  },
-  {
-    name: "invitation",
-    description:
-      "An invitation to my birthday party. Features JWT authentication, server actions, and a responsive design. Friends only.",
-    projectUrl: "",
-    createdDate: new Date("2025-02-14"),
-    tags: [
-      tag.language.TypeScript,
-      tag.framework.React,
-      tag.framework["Next.js"],
-      tag.other.JWT,
-      tag.framework.TailwindCSS,
-      tag.other["REST API"],
-      tag.other.GitHub,
-    ],
-    image: invitationImage,
-    imageAlt: "Invitation page",
   },
   {
     name: "friend-bot",

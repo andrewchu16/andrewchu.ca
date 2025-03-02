@@ -35,6 +35,7 @@ const languagesList: Tag[] = [
 const databasesList: Tag[] = [
   { short: "Firebase", long: "Firebase" },
   { short: "MongoDB", long: "MongoDB" },
+  { short: "Supabase", long: "Supabase" },
 ];
 
 const dataFrameworksList: Tag[] = [
@@ -75,6 +76,7 @@ const otherList: Tag[] = [
   { short: "Game", long: "Game Development" },
   { short: "Interpreter", long: "Interpreter" },
   { short: "JWT", long: "JWT" },
+  { short: "Vercel", long: "Vercel" },
 ];
 
 function buildTagMap(tags: Tag[]): { [key: string]: Tag } {
