@@ -10,7 +10,7 @@ export default function ProjectSearch({
   setSearchQuery,
 }: ProjectSearchProps) {
   return (
-    <label className="focus-within:ring-1 dark:focus-within:ring-primary focus-within:ring-neutral-600 focus-within:ring-opacity-30 w-full flex items-center gap-2 shadow-sm text-body p-2.5 dark:bg-neutral-700 bg-neutral-200 rounded-lg h-10 fill-secondary">
+    <label className="focus-within:ring-1 dark:focus-within:ring-primary focus-within:ring-neutral-600 focus-within:ring-opacity-30 w-full flex items-center gap-2 shadow-sm text-body p-2.5 dark:bg-neutral-700 bg-neutral-200 rounded-lg h-10 fill-secondary selection:bg-neutral-300 dark:selection:bg-neutral-800">
       <SearchIcon className="h-full" />
       <input
         value={searchQuery}

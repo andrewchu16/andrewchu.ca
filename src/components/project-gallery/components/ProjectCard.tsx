@@ -8,7 +8,11 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="rounded-lg flex flex-col lg:max-w-72 w-full max-w-84 dark:border-0 dark:shadow-sm dark:shadow-neutral-700 border dark:border-secondary gap-2">
       <div className="relative w-full h-32 rounded-t-md overflow-hidden">
-        <a href={project.projectUrl} target="_blank" className="relative block w-full h-full">
+        <a
+          href={project.projectUrl}
+          target="_blank"
+          className="relative block w-full h-full"
+        >
           <Image
             src={project.image}
             alt={project.imageAlt}
@@ -23,14 +27,17 @@ export default function ProjectCard({ project }: { project: Project }) {
             <WebLink href={project.projectUrl}>{project.name}</WebLink>
           </h1>
           {project.siteUrl && (
-            <WebLink href={project.siteUrl} className="text-sm text-secondary flex gap-1 items-center hover:text-body hover:fill-body fill-secondary hover:decoration-transparent">
+            <WebLink
+              href={project.siteUrl}
+              className="text-sm text-secondary flex gap-1 items-center hover:text-body hover:fill-body fill-secondary hover:decoration-transparent"
+            >
               visit site
               <OpenInNewIcon className="h-4" />
             </WebLink>
           )}
         </div>
         <p className="text-body text-sm mb-2">{project.description}</p>
-        <div className="flex gap-1 flex-wrap dark:selection:bg-neutral-800">
+        <div className="flex gap-1 flex-wrap dark:selection:bg-neutral-800 selection:bg-neutral-300">
           {project.tags.map((tag: Tag) => (
             <p
               key={tag.long}
