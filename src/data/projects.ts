@@ -213,7 +213,7 @@ const projects: Project[] = [
     ],
   },
   {
-    name: "camelAI Landing Page Clone",
+    name: "camelAI Clone",
     description: "A clone of the camelAI landing page. Supports mobile and webkit browsers. Implemented using Next.js and deployed on Vercel.",
     image: camelaiCloneImage,
     imageAlt: "camelAI landing page clone",
