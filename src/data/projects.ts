@@ -16,6 +16,8 @@ import friendBotImage from "@/assets/projects/friend-bot.png";
 import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
 import invitationImage from "@/assets/projects/invitation.png";
 import camelaiCloneImage from "@/assets/projects/camelai-clone.png";
+import screentimeWrappedImage from "@/assets/projects/screentime-wrapped.png";
+import replateImage from "@/assets/projects/replate.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -164,6 +166,22 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "Screentime Wrapped",
+    description:
+      "A screenpipe-powered app that visualizes your screen time data in a Spotify Wrapped-like format.",
+    image: screentimeWrappedImage,
+    imageAlt: "Screentime Wrapped Website Data",
+    projectUrl: "https://github.com/andrewchu16/screentime-wrapped",
+    createdDate: new Date("2025-03-03"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.framework.Gemini,
+      tag.hackathon["Screenpipe Agentic Hackathon"],
+    ],
+  },
+  {
     name: "Jarvis",
     description:
       "A voice-controlled assistant for performing CI/CD for engineers on call. Featuring custom-trained NER model using spaCy.",
@@ -213,8 +231,29 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "Replate",
+    description: "An AI-powered food sustainability and delivery app. Features dual-agent RAG pipeline. Won Eco-Mobility award at GenAI Genesis.",
+    image: replateImage,
+    imageAlt: "Replate landing page",
+    projectUrl: "https://github.com/andrewchu16/replate",
+    createdDate: new Date("2025-03-23"),
+    tags: [
+      tag.framework.Flask,
+      tag.framework["Next.js"],
+      tag.language.Python,
+      tag.framework["Express.js"],
+      tag.framework.Cohere,
+      tag.framework.Gemini,
+      tag.other.WebSocket,
+      tag.language.TypeScript,
+      tag.hackathon["GenAI Genesis"],
+      tag.other.Twilio,
+    ]
+  },
+  {
     name: "camelAI Clone",
-    description: "A clone of the camelAI landing page. Supports mobile and webkit browsers. Implemented using Next.js and deployed on Vercel.",
+    description:
+      "A clone of the camelAI landing page. Supports mobile and webkit browsers. Implemented using Next.js and deployed on Vercel.",
     image: camelaiCloneImage,
     imageAlt: "camelAI landing page clone",
     projectUrl: "https://github.com/andrewchu16/camelAI-landing-page",
@@ -226,7 +265,7 @@ const projects: Project[] = [
       tag.language.TypeScript,
       tag.other.GitHub,
       tag.other.Vercel,
-    ]
+    ],
   },
   {
     name: "Lilac Editor",

@@ -18,6 +18,8 @@ const hackathonsList: Tag[] = [
   { short: "Hack49", long: "Hack49" },
   { short: "Hack Western", long: "Hack Western 11" },
   { short: "UofTHacks", long: "UofTHacks 12" },
+  { short: "Screenpipe", long: "Screenpipe Agentic Hackathon" },
+  { short: "GenAI Genesis", long: "GenAI Genesis" },
 ];
 
 const languagesList: Tag[] = [
@@ -55,10 +57,12 @@ const frameworksList: Tag[] = [
   { short: "Mocha", long: "Mocha" },
   { short: "FastAPI", long: "FastAPI" },
   { short: "SvelteKit", long: "SvelteKit" },
-  { short: "Next.js", long: "Next.js" },
+  { short: "Next", long: "Next.js" },
   { short: "Express", long: "Express.js" },
   { short: "Node", long: "Node.js" },
   { short: "spaCy", long: "spaCy" },
+  { short: "Gemini", long: "Gemini" },
+  { short: "Cohere", long: "Cohere" },
 ];
 
 const otherList: Tag[] = [
@@ -77,6 +81,8 @@ const otherList: Tag[] = [
   { short: "Interpreter", long: "Interpreter" },
   { short: "JWT", long: "JWT" },
   { short: "Vercel", long: "Vercel" },
+  { short: "WebSocket", long: "WebSocket" },
+  { short: "Twilio", long: "Twilio" },
 ];
 
 function buildTagMap(tags: Tag[]): { [key: string]: Tag } {
