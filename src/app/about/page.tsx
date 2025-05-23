@@ -21,53 +21,29 @@ export default function About() {
           <h1 className="text-3xl sm:text-4xl font-bold mb-2">About</h1>
           <div className="max-w-[34rem] flex flex-col gap-3 text-body">
             <p>
-              Hi! I&apos;m a CS student at the University of Waterloo who loves
-              learning and trying new things. I&apos;ve explored{" "}
-              <WebLink href="https://dorahacks.io/buidl/17834">
-                brainwave processing
-              </WebLink>
-              ,{" "}
-              <WebLink href="https://github.com/andrewchu16/tinyraytracer">
-                computer graphics
-              </WebLink>
-              , and{" "}
-              <WebLink href="https://github.com/andrewchu16/lilac-editor">
-                desktop applications
-              </WebLink>
-              , and more.
+              Hi! I&apos;m a CS student at the University of Waterloo passionate
+              about learning and building new things. I&apos;ve attended 20+
+              hackathons and won awards at 8 of them, including YRHacks, DeltaHacks, and GenAI Genesis.
             </p>
             <p>
-              I&apos;m highly experienced in full-stack web development. My main
-              tech stacks are React, Svelte, TailwindCSS, JS/TS, Firebase,
-              Flask, and Express.js.
+              I have strong experience in full-stack web development, working
+              mainly with React, Svelte, TailwindCSS, JS/TS, Firebase, Flask, and
+              Express.js.
             </p>
             <p>
-              Previously, I was a Data Engineer Intern at{" "}
+              My work experience includes being a Data Engineer Intern at{" "}
               <WebLink href="https://www.alljoined.com/">Alljoined</WebLink>,
-              where I worked to improve timing accuracy and verify data
-              correctness of brainwave data. I was also a Full-Stack Engineer at{" "}
+              where I improved timing accuracy and verified brainwave data
+              correctness, and a Full-Stack Engineer at{" "}
               <WebLink href="https://digitalmarketingplus.com/">
                 Digitera
               </WebLink>
-              , where I developed a role-based school news app for students and
-              school administrations.
+              , where I developed a role-based school news app. I currently work at{" "}
+              <WebLink href="https://www.cgi.com/">CGI</WebLink> engineering automation solutions.
             </p>
             <p>
-              In my free time, I play a bunch of instruments and{" "}
-              <WebLink href="https://devpost.com/Previouslynamedjeff">
-                attend hackathons
-              </WebLink>
-              . I&apos;ve participated in 20+ hackathons and won awards at
-              YRHacks, Hack49, DeltaHacks, and more. I was an event logistics
-              organizer for{" "}
-              <WebLink href="https://yrhacks.ca">YRHacks 2024</WebLink>. I
-              coordinated schedules, managed real-time event updates, and
-              resolved logistical challenges, helping bridge the gap between all
-              stakeholders involved. I was also a mentor and judge for
-              GeeseHacks and NRGHacks.
-            </p>
-            <p>
-              I am currently interested in robotics and advanced raytracing.
+              I&apos;ve also organized, mentored, and judged at hackathons
+              such as YRHacks, GeeseHacks, and NRGHacks. Currently, I&apos;m organizing <WebLink href="https://hack404.dev">Hack404</WebLink>, a future-focused hackathon for making tech more accessible for students.
             </p>
           </div>
         </div>
