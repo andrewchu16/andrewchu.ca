@@ -14,6 +14,7 @@ import brainfImage from "@/assets/projects/brainf.png";
 import cowsVsDucksImage from "@/assets/projects/cows-vs-ducks.png";
 import friendBotImage from "@/assets/projects/friend-bot.png";
 import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
+import hjcAutomationImage from "@/assets/projects/hjc-automation.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -97,6 +98,24 @@ const projects: Project[] = [
     ],
   },
   {
+    name: "HJC Automation",
+    description:
+      "The landing page for HJC Automation, a company that specializes in automation solutions. Built with Next.js and Tailwind CSS.",
+    image: hjcAutomationImage,
+    imageAlt: "HJC Automation landing page",
+    projectUrl: "https://github.com/andrewchu16/hjc-automation-website",
+    siteUrl: "https://hjcautomation.com",
+    createdDate: new Date("2025-06-26"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.language.CSS,
+      tag.other.GitHub,
+      tag.language.HTML,
+    ],
+  },
+  {
     name: "tinyraytracer",
     description:
       "A minimalist raytracer in C++ and Go. Renders lighting effects using the Phong reflection model.",
@@ -147,7 +166,8 @@ const projects: Project[] = [
   },
   {
     name: "Cows Vs. Ducks",
-    description: "A strategy game based on Plants vs. Zombies. where cows defend against ducks. Implemented a state machine and animation system.",
+    description:
+      "A strategy game based on Plants vs. Zombies. where cows defend against ducks. Implemented a state machine and animation system.",
     projectUrl: "https://github.com/rhhscs/cows-vs-ducks",
     createdDate: new Date("2023-09-23"),
     image: cowsVsDucksImage,
@@ -156,7 +176,7 @@ const projects: Project[] = [
       tag.language.Java,
       tag.framework.JSwing,
       tag.other["Game Development"],
-    ]
+    ],
   },
   {
     name: "Jarvis",
@@ -180,7 +200,8 @@ const projects: Project[] = [
   },
   {
     name: "Layoff Evaders",
-    description: "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit. Won 2nd Place at DeltaHacks XI.",
+    description:
+      "A VR fitness game where players dodge obstacles to avoid getting laid off. Game built in Unity, dashboard built with Streamlit. Won 2nd Place at DeltaHacks XI.",
     projectUrl: "https://github.com/martin226/layoffevaders",
     createdDate: new Date("2025-01-12"),
     image: layoffEvadersImage,
@@ -189,7 +210,7 @@ const projects: Project[] = [
       tag.data.Streamlit,
       tag.hackathon["DeltaHacks XI"],
       tag.other["Game Development"],
-    ]
+    ],
   },
   {
     name: "raycaster-java",
@@ -235,7 +256,8 @@ const projects: Project[] = [
   },
   {
     name: "friend-bot",
-    description: "A Discord chatbot that befriends lonely users online. Implements context window and response regeneration. Won Best Use of API at YRHacks 2022.",
+    description:
+      "A Discord chatbot that befriends lonely users online. Implements context window and response regeneration. Won Best Use of API at YRHacks 2022.",
     projectUrl: "https://github.com/andrewchu16/friend-bot",
     image: friendBotImage,
     imageAlt: "A conversation with friend-bot",
@@ -245,7 +267,7 @@ const projects: Project[] = [
       tag.other["Discord Bot"],
       tag.other["Cohere API"],
       tag.hackathon["YRHacks 2022"],
-    ]
+    ],
   },
   {
     name: "Workd",
@@ -271,10 +293,7 @@ const projects: Project[] = [
     image: brainfImage,
     imageAlt: "brainf terminal utility",
     createdDate: new Date("2021-09-15"),
-    tags: [
-      tag.language.C,
-      tag.other.Interpreter,
-    ],
+    tags: [tag.language.C, tag.other.Interpreter],
   },
 ];
 
