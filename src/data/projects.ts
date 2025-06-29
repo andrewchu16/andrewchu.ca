@@ -18,6 +18,7 @@ import invitationImage from "@/assets/projects/invitation.png";
 import camelaiCloneImage from "@/assets/projects/camelai-clone.png";
 import screentimeWrappedImage from "@/assets/projects/screentime-wrapped.png";
 import replateImage from "@/assets/projects/replate.png";
+import hjcAutomationImage from "@/assets/projects/hjc-automation.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -113,6 +114,24 @@ const projects: Project[] = [
       tag.language.Go,
       tag.language["C++"],
       tag.other["Computer Graphics"],
+    ],
+  },
+  {
+    name: "HJC Automation",
+    description:
+      "The landing page for HJC Automation, a company that specializes in automation solutions.",
+    image: hjcAutomationImage,
+    imageAlt: "HJC Automation landing page",
+    projectUrl: "https://github.com/andrewchu16/hjc-automation-website",
+    siteUrl: "https://hjcautomation.com",
+    createdDate: new Date("2025-06-26"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.language.CSS,
+      tag.other.GitHub,
+      tag.other.Vercel,
     ],
   },
   {
@@ -232,7 +251,8 @@ const projects: Project[] = [
   },
   {
     name: "Replate",
-    description: "An AI-powered food sustainability and delivery app. Features dual-agent RAG pipeline. Won Eco-Mobility award at GenAI Genesis.",
+    description:
+      "An AI-powered food sustainability and delivery app. Features dual-agent RAG pipeline. Won Eco-Mobility award at GenAI Genesis.",
     image: replateImage,
     imageAlt: "Replate landing page",
     projectUrl: "https://github.com/andrewchu16/replate",
@@ -248,7 +268,7 @@ const projects: Project[] = [
       tag.language.TypeScript,
       tag.hackathon["GenAI Genesis"],
       tag.other.Twilio,
-    ]
+    ],
   },
   {
     name: "camelAI Clone",
