@@ -84,25 +84,6 @@ const projects: Project[] = [
     ],
   },
   {
-    name: "Workout Tracker",
-    description:
-      "A workout tracker web application that allows users to log their workouts and track their progress. Utilizes the MERN stack and MVC architecture.",
-    image: workoutPlannerImage,
-    imageAlt: "Workout tracker homepage",
-    projectUrl: "https://github.com/andrewchu16/mern-test-app",
-    createdDate: new Date("2024-12-20"),
-    tags: [
-      tag.database.MongoDB,
-      tag.framework["Express.js"],
-      tag.framework.React,
-      tag.framework["Node.js"],
-      tag.other["REST API"],
-      tag.other.JWT,
-      tag.language.JavaScript,
-      tag.language.CSS,
-    ],
-  },
-  {
     name: "tinyraytracer",
     description:
       "A minimalist raytracer in C++ and Go. Renders lighting effects using the Phong reflection model.",
@@ -114,24 +95,6 @@ const projects: Project[] = [
       tag.language.Go,
       tag.language["C++"],
       tag.other["Computer Graphics"],
-    ],
-  },
-  {
-    name: "HJC Automation",
-    description:
-      "The landing page for HJC Automation, a company that specializes in automation solutions.",
-    image: hjcAutomationImage,
-    imageAlt: "HJC Automation landing page",
-    projectUrl: "https://github.com/andrewchu16/hjc-automation-website",
-    siteUrl: "https://hjcautomation.com",
-    createdDate: new Date("2025-06-26"),
-    tags: [
-      tag.framework["Next.js"],
-      tag.framework.TailwindCSS,
-      tag.language.TypeScript,
-      tag.language.CSS,
-      tag.other.GitHub,
-      tag.other.Vercel,
     ],
   },
   {
@@ -233,6 +196,43 @@ const projects: Project[] = [
       tag.database.Firebase,
       tag.hackathon["DeltaHacks XI"],
       tag.other["Game Development"],
+    ],
+  },
+  {
+    name: "Workout Tracker",
+    description:
+      "A workout tracker web application that allows users to log their workouts and track their progress. Utilizes the MERN stack and MVC architecture.",
+    image: workoutPlannerImage,
+    imageAlt: "Workout tracker homepage",
+    projectUrl: "https://github.com/andrewchu16/mern-test-app",
+    createdDate: new Date("2024-12-20"),
+    tags: [
+      tag.database.MongoDB,
+      tag.framework["Express.js"],
+      tag.framework.React,
+      tag.framework["Node.js"],
+      tag.other["REST API"],
+      tag.other.JWT,
+      tag.language.JavaScript,
+      tag.language.CSS,
+    ],
+  },
+  {
+    name: "HJC Automation",
+    description:
+      "The landing page for HJC Automation, a company that specializes in automation solutions.",
+    image: hjcAutomationImage,
+    imageAlt: "HJC Automation landing page",
+    projectUrl: "https://github.com/andrewchu16/hjc-automation-website",
+    siteUrl: "https://hjcautomation.com",
+    createdDate: new Date("2025-06-26"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.TailwindCSS,
+      tag.language.TypeScript,
+      tag.language.CSS,
+      tag.other.GitHub,
+      tag.other.Vercel,
     ],
   },
   {
