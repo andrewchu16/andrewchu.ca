@@ -23,27 +23,33 @@ export default function About() {
             <p>
               Hi! I&apos;m a CS student at the University of Waterloo passionate
               about learning and building new things. I&apos;ve attended 20+
-              hackathons and won awards at 8 of them, including YRHacks, DeltaHacks, and GenAI Genesis.
+              hackathons and won awards at 9 of them, including{" "}
+              <WebLink href="https://hackthe6ix.com/">Hack the 6ix</WebLink>,{" "}
+              <WebLink href="https://www.deltahacks.com/">DeltaHacks</WebLink>,
+              and{" "}
+              <WebLink href="https://genaigenesis.ca/">GenAI Genesis</WebLink>. I&apos;ve also won 2 designathons.
             </p>
             <p>
               I have strong experience in full-stack web development, working
-              mainly with React, Svelte, TailwindCSS, JS/TS, Firebase, Flask, and
-              Express.js.
+              mainly with Next.js, FastAPI, and Express.js.
             </p>
             <p>
-              My work experience includes being a Data Engineer Intern at{" "}
+              My work experience includes being a Software Engineer Intern at{" "}
+              <WebLink href="https://www.cgi.com/">CGI</WebLink>, where I
+              developed an enterprise RAG chatbot, a Data Engineer Intern at{" "}
               <WebLink href="https://www.alljoined.com/">Alljoined</WebLink>,
               where I improved timing accuracy and verified brainwave data
               correctness, and a Full-Stack Engineer at{" "}
               <WebLink href="https://digitalmarketingplus.com/">
                 Digitera
               </WebLink>
-              , where I developed a role-based school news app. I currently work at{" "}
-              <WebLink href="https://www.cgi.com/">CGI</WebLink> engineering automation solutions.
+              , where I developed a role-based school news app.
             </p>
             <p>
-              I&apos;ve also organized, mentored, and judged at hackathons
-              such as YRHacks, GeeseHacks, and NRGHacks. Currently, I&apos;m organizing <WebLink href="https://hack404.dev">Hack404</WebLink>, a future-focused hackathon for making tech more accessible for students.
+              I&apos;ve also organized, mentored, and judged at hackathons{" "}
+              including <WebLink href="https://yrhacks.ca/">YRHacks</WebLink>,{" "}
+              <WebLink href="https://hack404.dev/">Hack404</WebLink>, and{" "}
+              <WebLink href="https://www.jamhacks.ca/">JAMHacks</WebLink>.
             </p>
           </div>
         </div>
