@@ -20,6 +20,7 @@ const hackathonsList: Tag[] = [
   { short: "UofTHacks", long: "UofTHacks 12" },
   { short: "Screenpipe", long: "Screenpipe Agentic Hackathon" },
   { short: "GenAI Genesis", long: "GenAI Genesis" },
+  { short: "HT6", long: "Hack the 6ix 2025" }
 ];
 
 const languagesList: Tag[] = [
@@ -83,6 +84,7 @@ const otherList: Tag[] = [
   { short: "Vercel", long: "Vercel" },
   { short: "WebSocket", long: "WebSocket" },
   { short: "Twilio", long: "Twilio" },
+  { short: "FFMPEG", long: "FFMPEG" },
 ];
 
 function buildTagMap(tags: Tag[]): { [key: string]: Tag } {

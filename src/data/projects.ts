@@ -19,6 +19,7 @@ import camelaiCloneImage from "@/assets/projects/camelai-clone.png";
 import screentimeWrappedImage from "@/assets/projects/screentime-wrapped.png";
 import replateImage from "@/assets/projects/replate.png";
 import hjcAutomationImage from "@/assets/projects/hjc-automation.png";
+import thirteenLabsImage from "@/assets/projects/thirteen-labs.png";
 
 import Project from "@/models/project.model";
 import { tag } from "./tags";
@@ -42,6 +43,23 @@ const projects: Project[] = [
       tag.other.GitHub,
       tag.framework.Mocha,
       tag.other.Figma,
+    ],
+  },
+  {
+    name: "ThirteenLabs",
+    description:
+      "Video to interactive model generator powered by Twelve Labs.",
+    image: thirteenLabsImage,
+    imageAlt: "ThirteenLabs model generation",
+    projectUrl: "https://github.com/Marcus990/ThirteenLabs",
+    createdDate: new Date("2025-07-20"),
+    tags: [
+      tag.framework["Next.js"],
+      tag.framework.FastAPI,
+      tag.hackathon["Hack the 6ix 2025"],
+      tag.other.FFMPEG,
+      tag.framework.Gemini,
+      tag.language.TypeScript,
     ],
   },
   {
