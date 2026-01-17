@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/providers/ThemeProvider";
-import Navbar from "@/components/nav-bar/Navbar";
+import DarkModeToggle from "@/components/nav-bar/components/DarkModeToggle";
 
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",
@@ -25,11 +25,8 @@ export default function RootLayout({
       <body className={`${hankenGrotesk.variable} antialiased`}>
         <ThemeProvider>
           <main id="content">{children}</main>
-          <div
-            className="fixed top-9 left-1/2 transform -translate-x-1/2"
-            id="navbar-container"
-          >
-            <Navbar />
+          <div className="fixed bottom-6 right-6 z-10">
+            <DarkModeToggle />
           </div>
         </ThemeProvider>
       </body>
