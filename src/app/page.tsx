@@ -25,7 +25,7 @@ export default function Home() {
             <div className="mb-8">
               <h1 className="text-4xl sm:text-5xl font-bold mb-2">Andrew Chu</h1>
               <h2 className="text-xl sm:text-2xl text-secondary mb-4">
-                CS @ UWaterloo
+                CS @ University of Waterloo
               </h2>
               <ContactLinks />
             </div>

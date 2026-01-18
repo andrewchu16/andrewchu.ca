@@ -46,7 +46,7 @@ body {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  @apply font-sans selection:bg-neutral-200 dark:selection:bg-neutral-700;
+  @apply font-sans selection:bg-neutral-200/50 dark:selection:bg-neutral-700/50;
 }
 
 body::before {
