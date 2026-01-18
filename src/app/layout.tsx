@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/providers/ThemeProvider";
-import DarkModeToggle from "@/components/nav-bar/components/DarkModeToggle";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",

@@ -1,6 +1,6 @@
 import ContactLinks from "@/components/ContactLinks";
 import WebLink from "@/components/utils/WebLink";
-import projects from "@/data/projects";
+import ProjectsList from "@/components/projects/ProjectsList";
 import Head from "next/head";
 
 export default function Home() {
@@ -67,26 +67,7 @@ export default function Home() {
           </section>
 
           {/* Right Column - Projects */}
-          <section className="flex flex-col">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6">Projects</h2>
-            <ul className="flex flex-col gap-4">
-              {projects.map((project) => (
-                <li key={project.name} className="group">
-                  <a
-                    href={project.siteUrl || project.projectUrl || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <h3 className="text-lg font-semibold text-primary group-hover:underline">
-                      {project.name}
-                    </h3>
-                    <p className="text-body text-sm">{project.description}</p>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
+          <ProjectsList />
         </div>
       </div>
     </>

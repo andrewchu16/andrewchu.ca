@@ -2,8 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import DarkModeIcon from "../../icons/DarkModeIcon";
-import LightModeIcon from "../../icons/LightModeIcon";
+import DarkModeIcon from "./icons/DarkModeIcon";
+import LightModeIcon from "./icons/LightModeIcon";
 
 export default function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
