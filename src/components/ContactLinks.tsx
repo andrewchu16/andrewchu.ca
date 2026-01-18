@@ -8,7 +8,7 @@ export default function ContactLinks() {
           key={link.name}
           href={link.url}
           target={link.target}
-          className="text-lg text-secondary hover:text-primary"
+          className="text-secondary hover:text-primary"
         >
           {link.name.toLowerCase()}
         </a>
