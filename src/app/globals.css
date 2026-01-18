@@ -12,8 +12,8 @@ body {
 :root {
   --background: #f4f5f8;
   --primary: #222222;
-  --body: #353535;
-  --secondary: #7c7c7c;
+  --body: #2d2d2d;
+  --secondary: #6a6a6a;
   --bg-base: #f4f5f8;
   --bg-blue: rgba(126, 154, 255, 0.45);
   --bg-orange: rgba(255, 174, 128, 0.28);
@@ -32,6 +32,15 @@ body {
   --bg-orange: rgba(255, 150, 92, 0.16);
   --bg-depth: rgba(0, 0, 0, 0.55);
   --noise-opacity: 0.26;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #d0d0d0;
 }
 
 body {
