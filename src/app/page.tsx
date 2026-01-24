@@ -23,7 +23,9 @@ export default function Home() {
           {/* Left Column - About */}
           <section className="flex flex-col">
             <div className="mb-8">
-              <h1 className="text-4xl sm:text-5xl font-bold mb-2">Andrew Chu</h1>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-2">
+                Andrew Chu
+              </h1>
               <h2 className="text-xl sm:text-2xl text-secondary mb-4">
                 CS @ University of Waterloo
               </h2>
@@ -59,7 +61,9 @@ export default function Home() {
               </p>
               <p>
                 I&apos;ve also organized, mentored, and judged at hackathons
-                including <WebLink href="https://yrhacks.ca/">YRHacks</WebLink>,{" "}
+                including{" "}
+                <WebLink href="https://uofthacks.com">UofT Hacks</WebLink>,{" "}
+                <WebLink href="https://yrhacks.ca/">YRHacks</WebLink>,{" "}
                 <WebLink href="https://hack404.dev/">Hack404</WebLink>, and{" "}
                 <WebLink href="https://www.jamhacks.ca/">JAMHacks</WebLink>.
               </p>
