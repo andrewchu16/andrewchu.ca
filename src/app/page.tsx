@@ -44,28 +44,55 @@ export default function Home() {
                 . I&apos;ve also won 2 designathons.
               </p>
               <p>
-                I have strong experience in full-stack web development, working
-                mainly with Next.js, FastAPI, and Express.js.
-              </p>
-              <p>
-                My work experience includes being a Software Engineer Intern at{" "}
-                <WebLink href="https://www.cgi.com/">CGI</WebLink>, where I
-                developed an enterprise RAG chatbot, a Data Engineer Intern at{" "}
-                <WebLink href="https://www.alljoined.com/">Alljoined</WebLink>,
-                where I improved timing accuracy and verified brainwave data
-                correctness, and a Full-Stack Engineer at{" "}
-                <WebLink href="https://digitalmarketingplus.com/">
-                  Digitera
-                </WebLink>
-                , where I developed a role-based school news app.
+                I&apos;ve worked at:
+                <ul className="list-disc list-inside mt-0.5">
+                  <li>
+                    <WebLink href="https://stripe.com/">
+                      Stripe (incoming)
+                    </WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://www.alljoined.com/">
+                      Alljoined (I&apos;m on the website!)
+                    </WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://www.cgi.com/">CGI</WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://digitalmarketingplus.com/">
+                      Digitera
+                    </WebLink>
+                  </li>
+                </ul>
               </p>
               <p>
                 I&apos;ve also organized, mentored, and judged at hackathons
-                including{" "}
-                <WebLink href="https://uofthacks.com">UofT Hacks</WebLink>,{" "}
-                <WebLink href="https://yrhacks.ca/">YRHacks</WebLink>,{" "}
-                <WebLink href="https://hack404.dev/">Hack404</WebLink>, and{" "}
-                <WebLink href="https://www.jamhacks.ca/">JAMHacks</WebLink>.
+                including:
+                <ul className="list-disc list-inside mt-0.5">
+                  <li>
+                    <WebLink href="https://uofthacks.com">UofT Hacks</WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://www.ctrlhackdel.com/">
+                      CTRL+HACK+DEL
+                    </WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://summerhacks.ca/">
+                      SummerHacks
+                    </WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://yrhacks.ca/">YRHacks</WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://hack404.dev/">Hack404</WebLink>
+                  </li>
+                  <li>
+                    <WebLink href="https://www.jamhacks.ca/">JAMHacks</WebLink>
+                  </li>
+                </ul>
               </p>
             </div>
           </section>
