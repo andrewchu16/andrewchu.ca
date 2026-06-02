@@ -47,14 +47,13 @@ export default function Home() {
                 I&apos;ve worked at:
                 <ul className="list-disc list-inside mt-0.5">
                   <li>
-                    <WebLink href="https://stripe.com/">
-                      Stripe (incoming)
-                    </WebLink>
+                    <WebLink href="https://stripe.com/">Stripe</WebLink>
                   </li>
                   <li>
                     <WebLink href="https://www.alljoined.com/">
-                      Alljoined (I&apos;m on the website!)
-                    </WebLink>
+                      Alljoined
+                    </WebLink>{" "}
+                    (I&apos;m on the website!)
                   </li>
                   <li>
                     <WebLink href="https://www.cgi.com/">CGI</WebLink>
