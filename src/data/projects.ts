@@ -8,7 +8,6 @@ import raycasterJavaImage from "@/assets/projects/raycaster-java.png";
 import brainfImage from "@/assets/projects/brainf.png";
 import cowsVsDucksImage from "@/assets/projects/cows-vs-ducks.png";
 import layoffEvadersImage from "@/assets/projects/layoff-evaders.png";
-import invitationImage from "@/assets/projects/invitation.png";
 import replateImage from "@/assets/projects/replate.png";
 import thirteenLabsImage from "@/assets/projects/thirteen-labs.png";
 
@@ -187,26 +186,6 @@ const projects: Project[] = [
     projectUrl: "https://github.com/andrewchu16/raycaster-java",
     createdDate: new Date("2022-07-21"),
     tags: [Tag.Java, Tag.JSwing, Tag["Computer Graphics"]],
-  },
-  {
-    name: "invitation",
-    description:
-      "An invitation to my birthday party. Features JWT authentication, server actions, and a responsive design. Friends only.",
-    projectUrl: "",
-    createdDate: new Date("2025-02-14"),
-    tags: [
-      Tag["Next.js"],
-      Tag.TypeScript,
-      Tag.Supabase,
-      Tag.JWT,
-      Tag["REST API"],
-      Tag.React,
-      Tag.TailwindCSS,
-      Tag.GitHub,
-      Tag.Vercel,
-    ],
-    image: invitationImage,
-    imageAlt: "Invitation page",
   },
   {
     name: "brainf",
