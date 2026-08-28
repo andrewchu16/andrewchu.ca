@@ -1,6 +1,5 @@
 import tinyraytracerImage from "@/assets/projects/tinyraytracer.jpg";
 import eyedentifyImage from "@/assets/projects/eyedentify.jpg";
-import personalWebsiteImage from "@/assets/projects/personal-website.png";
 import easymeetImage from "@/assets/projects/easymeet.png";
 import spyglassWebsiteImage from "@/assets/projects/spyglass-website.png";
 import baselineImage from "@/assets/projects/baseline.png";
@@ -121,17 +120,6 @@ const projects: Project[] = [
     ],
   },
   {
-    name: "Personal Website",
-    description:
-      "My personal website built with Next.js and Tailwind CSS. Features a dark mode toggle and a responsive design.",
-    image: personalWebsiteImage,
-    imageAlt: "Personal website home page",
-    projectUrl: "https://github.com/andrewchu16/andrewchu.ca",
-    siteUrl: "https://andrewchu.ca",
-    createdDate: new Date("2025-02-02"),
-    tags: [Tag["Next.js"], Tag.TailwindCSS, Tag.TypeScript, Tag.CSS, Tag.GitHub],
-  },
-  {
     name: "Cows Vs. Ducks",
     description:
       "A strategy-based game based on Plants vs. Zombies, where cows defend against ducks. Implemented a state machine and animation system.",
@@ -189,7 +177,7 @@ const projects: Project[] = [
   },
   {
     name: "brainf",
-    description: "A brainf**** interpreter and transpiler written in C.",
+    description: "A brainf*** interpreter and transpiler written in C.",
     projectUrl: "https://github.com/andrewchu16/brainf",
     image: brainfImage,
     imageAlt: "brainf terminal utility",
